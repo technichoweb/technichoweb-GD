@@ -11,5 +11,5 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <!--====== PRELOADER PART START ======-->
-<?php get_template_part('preloader') ?>
+<?php get_template_part('template-parts/preloader') ?>
 <!--====== PRELOADER PART ENDS ======-->
