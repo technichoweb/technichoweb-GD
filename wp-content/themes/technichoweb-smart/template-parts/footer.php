@@ -1,5 +1,6 @@
 <!--====== FOOTER FOUR PART START ======-->
 <footer id="footer" class="footer-area">
+    <?php wp_footer(); ?>
     <div class="footer-widget">
         <div class="container">
             <div class="row">
@@ -118,3 +119,4 @@
 </body>
 
 </html>
+

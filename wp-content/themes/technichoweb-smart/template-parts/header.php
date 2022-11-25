@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>">
 <head>
+    <?php wp_head(); ?>
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -25,7 +26,8 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 <!--====== PRELOADER PART START ======-->
 <?php get_template_part('preloader') ?>
 <!--====== PRELOADER PART ENDS ======-->
