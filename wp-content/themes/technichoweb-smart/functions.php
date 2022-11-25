@@ -33,3 +33,24 @@ function gd_register_assets()
 }
 
 add_action('wp_enqueue_scripts', 'gd_register_assets');
+
+add_action('init', function () {
+    register_nav_menu('header-menu', __('Header Menu'));
+});
+
+function atg_menu_classes($classes, $item, $args) {
+    if($args->theme_location == 'header-menu') {
+        $classes[] = 'nav-item';
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
+
+function add_specific_menu_location_atts( $atts, $item, $args ) {
+    if($args->theme_location == 'header-menu') {
+        // add the desired attributes:
+        $atts['class'] = 'page-scroll';
+    }
+    return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3 );
