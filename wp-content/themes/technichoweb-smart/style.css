@@ -4,7 +4,7 @@ Theme Name: TECHNICHOWEB SMART
 
 .main__bg {
     background-image: linear-gradient(-60deg, #CFD7E4 50%, #ffff 50%);
-    animation: slide 6s ease-in-out infinite alternate;
+    animation: slide 7s ease-in-out infinite alternate;
     position: fixed;
     top:0;
     bottom: 0;
@@ -15,10 +15,10 @@ Theme Name: TECHNICHOWEB SMART
 }
 .layer1 {
     animation-direction: alternate-reverse;
-    animation-duration: 4s;
+    animation-duration: 8s;
 }
 .layer2 {
-    animation-duration: 5s;
+    animation-duration: 10s;
 }
 @keyframes slide {
     0% {
