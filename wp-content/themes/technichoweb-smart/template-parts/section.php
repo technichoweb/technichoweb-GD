@@ -29,60 +29,49 @@
         </div> <!-- container -->
     </div> <!-- navbar area -->
     <div id="home" class="slider-area">
-        <div class="bd-example">
-            <div id="carouselOne" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselOne" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselOne" data-slide-to="1"></li>
-                    <li data-target="#carouselOne" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item bg_cover active"
-                         style="background-image: url(assets/images/slider-1.jpg)">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-6 col-lg-7 col-sm-10">
-                                        <h2 class="carousel-title">Refreshing Design & Easy to Customize</h2>
-                                    </div>
-                                </div> <!-- row -->
-                            </div> <!-- container -->
-                        </div> <!-- carousel caption -->
-                    </div> <!-- carousel-item -->
-
-                    <div class="carousel-item bg_cover" style="background-image: url(assets/images/slider-2.jpg)">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-6 col-lg-7 col-sm-10">
-                                        <h2 class="carousel-title">Based on Latest Bootstrap & HTML5</h2>
-                                    </div>
-                                </div> <!-- row -->
-                            </div> <!-- container -->
-                        </div> <!-- carousel caption -->
-                    </div> <!-- carousel-item -->
-
-                    <div class="carousel-item bg_cover" style="background-image: url(assets/images/slider-3.jpg)">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-xl-6 col-lg-7 col-sm-10">
-                                        <h2 class="carousel-title">Multi-purpose Landing Page Template</h2>
-                                    </div>
-                                </div> <!-- row -->
-                            </div> <!-- container -->
-                        </div> <!-- carousel caption -->
-                    </div> <!-- carousel-item -->
-                </div> <!-- carousel-inner -->
-                <a class="carousel-control-prev" href="#carouselOne" role="button" data-slide="prev">
-                    <i class="lni-arrow-left-circle"></i>
-                </a>
-                <a class="carousel-control-next" href="#carouselOne" role="button" data-slide="next">
-                    <i class="lni-arrow-right-circle"></i>
-                </a>
-            </div> <!-- carousel -->
-        </div> <!-- bd-example -->
+        <header>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/24/10/30/business-2884023_960_720.jpg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line"></div>
+                                <h2>Teimagine Digital Experience with</h2>
+                                <h1>Start-ups and solutions</h1>
+                                <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line animated bounceInLeft"></div>
+                                <h2>Reimagine Digital Experience with</h2>
+                                <h1>Intelligent solutions</h1>
+                                <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/04/16/37/meeting-2284501_960_720.jpg" alt="images not found">
+                    <div class="cover">
+                        <div class="container">
+                            <div class="header-content">
+                                <div class="line animated bounceInLeft"></div>
+                                <h2>Peimagine Digital Experience with</h2>
+                                <h1>Intelligent Solutions</h1>
+                                <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </div>
 </section>
 
