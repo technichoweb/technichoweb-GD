@@ -73,6 +73,10 @@
         </div> <!-- container -->
     </div> <!-- footer copyright -->
 </footer>
+<!--
+<div class="main__bg"></div>
+<div class="main__bg layer1"></div>
+<div class="main__bg layer2"></div>-->
 <!--====== FOOTER FOUR PART ENDS ======-->
 
 <!--====== BACK TOP TOP PART START ======-->

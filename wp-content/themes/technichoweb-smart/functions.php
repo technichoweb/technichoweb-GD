@@ -54,3 +54,31 @@ function add_specific_menu_location_atts( $atts, $item, $args ) {
     return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3 );
+
+
+add_action( 'init', 'custom_post_type' );
+
+function custom_post_type() {
+    register_post_type( 'gdslider',
+        array(
+            'labels' => array(
+                'name' => __( 'Slider' ),
+                'singular_name' => __( 'Slider' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'slider'),
+        )
+    );
+    register_post_type( 'gdportfolio',
+        array(
+            'labels' => array(
+                'name' => __( 'Portfolio' ),
+                'singular_name' => __( 'Portfolio' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'portfolio'),
+        )
+    );
+}
