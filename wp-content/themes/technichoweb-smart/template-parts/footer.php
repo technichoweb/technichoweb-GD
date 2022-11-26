@@ -56,11 +56,6 @@
                         <p class="text">Crafted by <a style="color: #38f9d7" rel="nofollow" href="https://uideck.con">UIdeck</a> and UI Elements from <a style="color: #38f9d7" rel="nofollow" href="https://ayroui.com">Ayro UI</a></p>
                     </div> <!--  copyright -->
                 </div>
-                <div class="col-lg-2">
-                    <div class="footer-logo text-center mt-10">
-                        <a href="index.html"><img src="assets/images/logo-2.svg" alt="Logo"></a>
-                    </div> <!-- footer logo -->
-                </div>
                 <div class="col-lg-5">
                     <ul class="social text-center text-lg-right mt-10">
                         <li><a href="https://facebook.com/uideckHQ"><i class="lni-facebook-filled"></i></a></li>
@@ -73,10 +68,10 @@
         </div> <!-- container -->
     </div> <!-- footer copyright -->
 </footer>
-<!--
+
 <div class="main__bg"></div>
 <div class="main__bg layer1"></div>
-<div class="main__bg layer2"></div>-->
+<div class="main__bg layer2"></div>
 <!--====== FOOTER FOUR PART ENDS ======-->
 
 <!--====== BACK TOP TOP PART START ======-->

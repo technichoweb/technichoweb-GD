@@ -2267,7 +2267,7 @@ p {
 /*===== BACK TO TOP =====*/
 .back-to-top {
   font-size: 20px;
-  color: #121212;
+  color: #CFD7E4;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -2285,7 +2285,7 @@ p {
   transition: all 0.3s ease-out 0s;
   display: none; }
   .back-to-top:hover {
-    color: #121212;
+    color: #ffffff;
     background-color: #0A083A; }
 
 /*# sourceMappingURL=style.css.map */

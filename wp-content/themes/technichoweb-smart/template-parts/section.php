@@ -28,7 +28,7 @@
             </div> <!-- row -->
         </div> <!-- container -->
     </div> <!-- navbar area -->
-    <div id="home" class="slider-area">
+    <div id="home">
         <header>
             <div class="owl-carousel owl-theme">
                 <?php
