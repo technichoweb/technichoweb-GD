@@ -22,6 +22,7 @@
                                 'menu_class' => 'navbar-nav ml-auto',
                             ));
                             ?>
+                            <?php echo do_shortcode('[gtranslate]'); ?>
                         </div>
                     </nav> <!-- navbar -->
                 </div>
@@ -165,33 +166,7 @@
             <div class="col-lg-6">
                 <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="1.5s"
                      data-wow-delay="0.5s">
-                    <form id="contact-form" action="assets/contact.php" method="post">
-                        <div class="form-input mt-15">
-                            <label>Name</label>
-                            <div class="input-items default">
-                                <input type="text" placeholder="Name" name="name">
-                                <i class="lni-user"></i>
-                            </div>
-                        </div> <!-- form input -->
-                        <div class="form-input mt-15">
-                            <label>Email</label>
-                            <div class="input-items default">
-                                <input type="email" placeholder="Email" name="email">
-                                <i class="lni-envelope"></i>
-                            </div>
-                        </div> <!-- form input -->
-                        <div class="form-input mt-15">
-                            <label>Massage</label>
-                            <div class="input-items default">
-                                <textarea placeholder="Massage" name="massage"></textarea>
-                                <i class="lni-pencil-alt"></i>
-                            </div>
-                        </div> <!-- form input -->
-                        <p class="form-message"></p>
-                        <div class="form-input rounded-buttons mt-20">
-                            <button type="submit" class="main-btn rounded-three">Submit</button>
-                        </div> <!-- form input -->
-                    </form>
+                     <?php echo do_shortcode('[contact-form-7 id="29" title="contact"]') ?>
                 </div> <!-- contact form -->
             </div>
         </div> <!-- row -->
