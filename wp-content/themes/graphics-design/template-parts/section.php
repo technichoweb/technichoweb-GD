@@ -104,7 +104,6 @@
             while ($query->have_posts()) : $query->the_post();
                 $image = get_field('gd_photo', $post->ID);
                 $slug = '';
-                $defaultImage = get_template_directory_uri()."/assets/images/without_picture.png";
                 $postName = explode('-', $post->post_name);
                 if (isset($postName) && array_key_exists(0, $postName)) {
                     $slug = $postName[0];
@@ -113,11 +112,11 @@
                 <div class="col-lg-4 col-sm-6 <?= $slug ?>">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <div class="portfolio-image">
-                            <img src="<?= $image ?? $defaultImage ?>" alt="portfolio">
+                            <img src="<?= $image ?>" alt="portfolio">
                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                 <div class="portfolio-content">
                                     <div class="portfolio-icon">
-                                        <a class="image-popup" href="<?= $image ?? $defaultImage ?>"><i class="lni-zoom-in"></i></a>
+                                        <a class="image-popup" href="<?= $image ?>"><i class="lni-zoom-in"></i></a>
                                     </div>
                                     <div class="portfolio-icon">
                                         <a href="#"><i class="lni-link"></i></a>
