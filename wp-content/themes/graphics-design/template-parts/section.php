@@ -82,11 +82,10 @@
             <div class="col-lg-12">
                 <div class="portfolio-menu pt-30 text-center">
                     <ul>
-                        <li data-filter="*" class="active">ALL WORK</li>
-                        <li data-filter=".branding-3">BRANDING</li>
-                        <li data-filter=".marketing-3">MARKETING</li>
-                        <li data-filter=".planning-3">PLANNING</li>
-                        <li data-filter=".research-3">RESEARCH</li>
+                        <li data-filter="*" class="active">TOUT</li>
+                        <li class="notranslate" data-filter=".bac">BACKGROUND</li>
+                        <li data-filter=".bro">BROCHURES</li>
+                        <li data-filter=".eti">ÉTIQUETTES</li>
                     </ul>
                 </div> <!-- portfolio menu -->
             </div>
@@ -97,12 +96,12 @@
                 'post_type' => 'gdportfolio',
                 'posts_per_page' => -1
             );
-
             // Query the posts:
             $query = new WP_Query($args);
             // Loop through the obituaries:
             while ($query->have_posts()) : $query->the_post();
-                $image = get_field('gd_photo', $post->ID);
+                $image = get_field('gd_photo', $post->ID)['url'];
+                $defaultImage = "https://images.unsplash.com/photo-1664189154567-8de6739810ac?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2ODU2NDU&ixlib=rb-4.0.3&q=80";
                 $slug = '';
                 $postName = explode('-', $post->post_name);
                 if (isset($postName) && array_key_exists(0, $postName)) {
@@ -112,11 +111,11 @@
                 <div class="col-lg-4 col-sm-6 <?= $slug ?>">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <div class="portfolio-image">
-                            <img src="<?= $image ?>" alt="portfolio">
+                            <img class="img-thumbnail" src="<?= $image ?? $defaultImage ?>" alt="portfolio">
                             <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                 <div class="portfolio-content">
                                     <div class="portfolio-icon">
-                                        <a class="image-popup" href="<?= $image ?>"><i class="lni-zoom-in"></i></a>
+                                        <a class="image-popup" href="<?= $image ?? $defaultImage ?>"><i class="lni-zoom-in"></i></a>
                                     </div>
                                     <div class="portfolio-icon">
                                         <a href="#"><i class="lni-link"></i></a>
