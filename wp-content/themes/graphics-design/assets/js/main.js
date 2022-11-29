@@ -100,22 +100,6 @@ $(function() {
         gallery: {
             enabled: true
         },
-        // Fixed position will be used
-        fixContentPos: true,
-
-        // Since disabled, Magnific Popup
-        // will not put close button
-        // inside content of popup
-        closeBtnInside: false,
-        preloader: true,
-
-        // Delay in milliseconds before
-        // popup is removed
-        removalDelay: 2000,
-
-        // Class that is added to
-        // popup wrapper and background
-        mainClass: 'mfp-fade'
     });
     
     //====== Magnific Popup
