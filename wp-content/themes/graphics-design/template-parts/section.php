@@ -44,6 +44,7 @@
                 while ($query->have_posts()) : $query->the_post();
                 $slideImage = get_field('gd_photo', $post->ID)['url'];
                 $slideSecondTitle = get_field('gd_second_title', $post->ID);
+                $slideFirstTitle = get_field('gd_first_title', $post->ID);
                 ?>
                 <div class="item">
                     <img src="<?= $slideImage ?>" alt="images not found">
@@ -57,6 +58,8 @@
                                 <h1><?= the_title() ?></h1>
                                 <h4><?= $post->post_content; ?></h4>
                             </div>
+                            <div class="k-title-outside-line-1"><?= $post->post_content; ?></div>
+                            <div class="k-title-outside-line-2"><?= $slideSecondTitle; ?></div>
                         </div>
                     </div>
                 </div>
