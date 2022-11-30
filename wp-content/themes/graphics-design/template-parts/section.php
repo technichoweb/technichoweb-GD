@@ -22,7 +22,7 @@
                                 'menu_class' => 'navbar-nav ml-auto',
                             ));
                             ?>
-                            <?php echo do_shortcode('[gtranslate]'); ?>
+                            <?php //echo do_shortcode('[gtranslate]'); ?>
                         </div>
                     </nav> <!-- navbar -->
                 </div>
