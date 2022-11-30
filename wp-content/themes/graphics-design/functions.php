@@ -85,4 +85,27 @@ function custom_post_type() {
             'rewrite' => array('slug' => 'portfolio'),
         )
     );
+
+    $labels = array(
+        'name'              => _x( 'Gallery', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Galleries', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search gallery picture' ),
+        'all_items'         => __( 'All gallery' ),
+        'parent_item'       => __( 'Parent galleries' ),
+        'parent_item_colon' => __( 'Parent gallery:' ),
+        'edit_item'         => __( 'Edit gallery' ),
+        'update_item'       => __( 'Update gallery' ),
+        'add_new_item'      => __( 'Add New gallery' ),
+        'new_item_name'     => __( 'New gallery Name' ),
+        'menu_name'         => __( 'Galleries' ),
+    );
+    $args   = array(
+        'hierarchical'      => true, // make it hierarchical (like categories)
+        'labels'            => $labels,
+        'show_ui'           => true,
+        'show_admin_column' => true,
+        'query_var'         => true,
+        'rewrite'           => [ 'slug' => 'gallery' ],
+    );
+    register_taxonomy( 'gallery', [ 'post' ], $args );
 }

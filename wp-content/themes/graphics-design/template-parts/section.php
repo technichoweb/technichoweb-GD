@@ -87,29 +87,34 @@
                 <div class="portfolio-menu pt-30 text-center">
                     <ul>
                         <li data-filter="*" class="active">TOUT</li>
-                        <li class="notranslate" data-filter=".bac">BACKGROUND</li>
-                        <li data-filter=".bro">BROCHURES</li>
-                        <li data-filter=".eti">ÉTIQUETTES</li>
+                        <li class="notranslate" data-filter=".background">BACKGROUND</li>
+                        <li data-filter=".brochure">BROCHURES</li>
+                        <li data-filter=".detourage">Détourage photos</li>
+                        <li data-filter=".etiquette">ÉTIQUETTES</li>
+                        <li data-filter=".miseenpage">Mise en page</li>
                     </ul>
                 </div> <!-- portfolio menu -->
             </div>
         </div> <!-- row -->
         <div class="row grid">
             <?php
-            $args = array(
-                'post_type' => 'gdportfolio',
-                'posts_per_page' => -1
-            );
-            // Query the posts:
-            $query = new WP_Query($args);
-            // Loop through the obituaries:
-            while ($query->have_posts()) : $query->the_post();
-                $image = get_field('gd_photo', $post->ID)['url'];
+            $termWithoutParent = '';
+            $terms = get_terms([
+                'taxonomy' => 'gallery',
+                'hide_empty' => false,
+            ]);
+
+            foreach ($terms as $term){
+                if ((bool)$term->parent){
+                    continue;
+                }
+                $termWithoutParent = $term;
+                $image = get_field('gd_photo', 'gallery' . '_' . $term->term_id)['url'];
                 $defaultImage = "https://images.unsplash.com/photo-1664189154567-8de6739810ac?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2ODU2NDU&ixlib=rb-4.0.3&q=80";
                 $slug = '';
-                $postName = explode('-', $post->post_name);
-                if (isset($postName) && array_key_exists(0, $postName)) {
-                    $slug = $postName[0];
+                $termName = explode('-', $term->slug);
+                if (isset($termName) && array_key_exists(0, $termName)) {
+                    $slug = $termName[0];
                 }
                 ?>
                 <div class="col-lg-4 col-sm-6 <?= $slug ?>">
@@ -128,12 +133,12 @@
                             </div>
                         </div>
                         <div class="portfolio-text">
-                            <h4 class="portfolio-title"><a href="#"><?php the_title() ?></a></h4>
-                            <p class="text"><?= $post->post_content ?></p>
+                            <h4 class="portfolio-title"><a href="#"><?= $term->name ?></a></h4>
+                            <p class="text"><?= $term->description ?></p>
                         </div>
                     </div> <!-- single portfolio -->
                 </div>
-            <?php endwhile; ?>
+            <?php } ?>
         </div>
     </div> <!-- row -->
     </div> <!-- row -->

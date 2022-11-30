@@ -228,3 +228,7 @@ header:hover .owl-next {
     height: 200px !important;
     object-fit: cover;
 }
+
+.portfolio-menu ul li  {
+    text-transform: uppercase;
+}
