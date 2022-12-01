@@ -16,7 +16,12 @@ jQuery(document).ready(function () {
                     output += '<div><img class="img-fluid" src="'+el.url_image+'" alt=""></div>';
                 });
                 miseenpageElem.html(output);
-                miseenpageElem.slick();
+                miseenpageElem.slick({
+                    speed: 1000,
+                    fade: true,
+                    prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+                    nextArrow: '<button class="slide-arrow next-arrow"></button>'
+                });
             },
             error: function (error) {
 

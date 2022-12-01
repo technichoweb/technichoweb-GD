@@ -91,7 +91,11 @@
             }
         });
         $(document).ready(function () {
-            $('.miseenpages').slick();
+            $('.miseenpages').slick({
+                speed: 1500,
+                prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+                nextArrow: '<button class="slide-arrow next-arrow"></button>'
+            });
         });
 
         $('.modal').on('shown.bs.modal', function (e) {
