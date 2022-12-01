@@ -23,7 +23,6 @@ function gd_register_assets()
     wp_enqueue_style('style_theme', get_stylesheet_uri(), array(), '1.0');
 
     // Déclarer le fichier CSS à un autre emplacement
-    wp_enqueue_style('animate', get_template_directory_uri() . '/assets/images/favicon.png', array(), '1.0');
     wp_enqueue_style('bootstrap.min', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0');
     wp_enqueue_style('LineIcons-min', get_template_directory_uri() . '/assets/css/LineIcons.css', array(), '1.0');
     wp_enqueue_style('magnific-popup-min', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), '1.0');

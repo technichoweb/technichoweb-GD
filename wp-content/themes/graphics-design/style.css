@@ -229,7 +229,7 @@ header:hover .owl-next {
     object-fit: cover;
     background-color: transparent !important;
     border: 0 !important;
-    border-radius: 1.25rem !important;
+    //border-radius: 1.25rem !important;
 }
 
 .portfolio-menu ul li  {
