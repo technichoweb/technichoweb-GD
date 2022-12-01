@@ -86,6 +86,18 @@ function custom_post_type() {
         )
     );
 
+    register_post_type( 'gdclipping',
+        array(
+            'labels' => array(
+                'name' => __( 'Détourage' ),
+                'singular_name' => __( 'Détourage' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'clipping'),
+        )
+    );
+
     $labels = array(
         'name'              => _x( 'Gallery', 'taxonomy general name' ),
         'singular_name'     => _x( 'Galleries', 'taxonomy singular name' ),
