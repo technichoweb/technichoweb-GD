@@ -238,7 +238,7 @@ header:hover .owl-next {
 
 .img-comp-container {
     position: relative;
-    height: 200px; /*should be the same height as the images*/
+    height: 200px;
 }
 
 .img-comp-img {
@@ -257,7 +257,6 @@ header:hover .owl-next {
     position: absolute;
     z-index:9;
     cursor: ew-resize;
-    /*set the appearance of the slider:*/
     width: 30px;
     height: 30px;
     background-color: #E72F49;
@@ -285,8 +284,6 @@ header:hover .owl-next {
 /**
 portfolio
  */
-
-
 .portfolio {
     display: flex;
     flex-wrap: wrap;
