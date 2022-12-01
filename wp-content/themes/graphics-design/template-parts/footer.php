@@ -90,6 +90,14 @@
                 }
             }
         });
+        $(document).ready(function () {
+            $('.miseenpages').slick();
+        });
+
+        $('.modal').on('shown.bs.modal', function (e) {
+            $('.miseenpages').slick('setPosition');
+            $('.wrap-modal-slider').addClass('open');
+        })
     })
 </script>
 </body>

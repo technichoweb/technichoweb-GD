@@ -26,7 +26,7 @@ function gd_register_assets()
     wp_enqueue_style('bootstrap.min', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0');
     wp_enqueue_style('LineIcons-min', get_template_directory_uri() . '/assets/css/LineIcons.css', array(), '1.0');
     wp_enqueue_style('magnific-popup-min', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), '1.0');
-    wp_enqueue_style('slick-min', get_template_directory_uri() . '/assets/css/slick', array(), '1.0');
+    wp_enqueue_style('slick-min', get_template_directory_uri() . '/assets/css/slick.css', array(), '1.0');
     wp_enqueue_style('animate', get_template_directory_uri() . '/assets/css/animate.css', array(), '1.0');
     wp_enqueue_style('default-min', get_template_directory_uri() . '/assets/css/default.css', array(), '1.0');
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0');

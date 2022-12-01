@@ -157,6 +157,24 @@
             <?php endwhile; ?>
         </div>
     </div> <!-- row -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+       open
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="wrap-modal-slider">
+                        <div class="miseenpages">
+                            <div><img src="http://via.placeholder.com/636x300" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <script>
     /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
