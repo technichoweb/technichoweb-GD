@@ -161,10 +161,10 @@
                 <div class="col-lg-4 col-sm-6 <?= $slug ?>">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <div class="img-comp-container">
-                            <div class="img-comp-img ">
+                            <div class="img-comp-img " style="background-image: url('<?php echo get_template_directory_uri().'/assets/images/clip.png'?>')">
                                 <img src="<?php echo $firstImage ?>" width="350" height="240">
                             </div>
-                            <div class="img-comp-img img-comp-overlay">
+                            <div class="img-comp-img img-comp-overlay" >
                                 <img src="<?php echo $secondImage ?>" width="350" height="240">
                             </div>
                         </div>
