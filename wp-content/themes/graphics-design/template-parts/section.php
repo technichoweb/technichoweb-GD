@@ -118,9 +118,13 @@
                 }
                 ?>
 
-                <a href="#" class="card col-md-4 <?= $slug ?>">
-                    <div class="image">
-                        <img class="img-thumbnail"  src="<?= $image ?? $defaultImage ?>" alt="" />
+                <a href="#" class="card_image card col-md-4 <?= $slug ?>"
+                   data-toggle="modal"
+                   data-url="<?= admin_url('admin-ajax.php'); ?>"
+                   data-term="<?= $term->term_id ?>"
+                   data-target="#exampleModalCenter">
+                    <div class="image" >
+                       <img class="img-thumbnail"  src="<?= $image ?? $defaultImage ?>" alt="" />
                     </div>
                 </a>
             <?php } ?>
@@ -157,18 +161,12 @@
             <?php endwhile; ?>
         </div>
     </div> <!-- row -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-       open
-    </button>
-    <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="wrap-modal-slider">
                         <div class="miseenpages">
-                            <div><img src="http://via.placeholder.com/636x300" alt=""></div>
                         </div>
                     </div>
                 </div>

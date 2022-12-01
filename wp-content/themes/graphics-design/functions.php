@@ -120,3 +120,47 @@ function custom_post_type() {
     );
     register_taxonomy( 'gallery', [ 'post' ], $args );
 }
+
+function ajax_popup_slick() {
+    wp_enqueue_script(
+        'popup_ajax_slick',
+        get_template_directory_uri() . '/assets/js/ajax.slick.js', [ 'jquery' ],
+        '1.0',
+        true
+    );
+}
+add_action( 'wp_enqueue_scripts', 'ajax_popup_slick' );
+
+add_action('wp_ajax_get_images','get_data_images');
+add_action('wp_ajax_nopriv_get_images','get_data_images');
+
+/**
+ * get all images gallery
+ */
+function get_data_images()
+{
+    $taxonomyName = 'gallery';
+    $termId = (int)$_POST['term_id'];
+    $childTerms = get_term_children($termId, $taxonomyName);
+    $result = [];
+
+    if (isset($childTerms) && !empty($childTerms)) {
+        foreach ($childTerms as $childTerm) {
+            $term = get_term_by('id', $childTerm, $taxonomyName);
+            $result[] = [
+                'slug' => $term->slug,
+                'term_id' => $term->term_id,
+                'url_image' => get_field('gd_photo', $taxonomyName . '_' . $term->term_id)['url']
+            ];
+        }
+    } else {
+        $term = get_term_by('id', $termId, $taxonomyName);
+        $result[] = [
+            'slug' => $term->slug,
+            'term_id' => $term->term_id,
+            'url_image' => get_field('gd_photo', $taxonomyName . '_' . $term->term_id)['url']
+        ];
+    }
+
+    wp_send_json($result);
+}
