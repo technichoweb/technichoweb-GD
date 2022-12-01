@@ -96,7 +96,7 @@
                 </div> <!-- portfolio menu -->
             </div>
         </div> <!-- row -->
-        <div class="row grid">
+        <div class="row grid portfolio">
             <?php
             $termWithoutParent = '';
             $terms = get_terms([
@@ -117,29 +117,13 @@
                     $slug = $termName[0];
                 }
                 ?>
-                <div class="col-lg-4 col-sm-6 <?= $slug ?>">
-                    <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                        <div class="portfolio-image">
-                            <img class="img-thumbnail" src="<?= $image ?? $defaultImage ?>" alt="portfolio">
-<!--                            <div class="portfolio-overlay d-flex align-items-center justify-content-center">-->
-<!--                                <div class="portfolio-content">-->
-<!--                                    <div class="portfolio-icon">-->
-<!--                                        <a class="image-popup" href="--><?php //echo $image ?? $defaultImage ?><!--"><i class="lni-zoom-in"></i></a>-->
-<!--                                    </div>-->
-<!--                                    <div class="portfolio-icon">-->
-<!--                                        <a href="#"><i class="lni-link"></i></a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-                        </div>
-<!--                        <div class="portfolio-text">-->
-<!--                            <h4 class="portfolio-title"><a href="#">--><?php //echo $term->name ?><!--</a></h4>-->
-<!--                            <p class="text">--><?php //echo $term->description ?><!--</p>-->
-<!--                        </div>-->
-                    </div> <!-- single portfolio -->
-                </div>
-            <?php } ?>
 
+                <a href="#" class="card col-md-4 <?= $slug ?>">
+                    <div class="image">
+                        <img class="img-thumbnail"  src="<?= $image ?? $defaultImage ?>" alt="" />
+                    </div>
+                </a>
+            <?php } ?>
             <?php
             $args = array(
                 'post_type' => 'gdclipping',
