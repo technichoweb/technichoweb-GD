@@ -73,17 +73,6 @@ function custom_post_type() {
             'rewrite' => array('slug' => 'slider'),
         )
     );
-    register_post_type( 'gdportfolio',
-        array(
-            'labels' => array(
-                'name' => __( 'Portfolio' ),
-                'singular_name' => __( 'Portfolio' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'portfolio'),
-        )
-    );
 
     register_post_type( 'gdclipping',
         array(
