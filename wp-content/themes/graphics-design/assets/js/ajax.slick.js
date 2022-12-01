@@ -1,4 +1,4 @@
-(function ($) {
+jQuery(document).ready(function () {
     $(".card_image").on("click", function () {
         let term_id = $(this).data('term');
         let ajaxurl = $(this).data('url');
@@ -9,16 +9,18 @@
                 term_id: term_id,
                 action: 'get_images'
             }, success: function (response) {
-                $('.miseenpages').html('');
+                let miseenpageElem = $('.miseenpages')
+                miseenpageElem.slick('destroy');
                 let output = ''
                 $.each(response, function(pos, el) {
                     output += '<div><img class="img-fluid" src="'+el.url_image+'" alt=""></div>';
                 });
-                $('.miseenpages').html(output);
+                miseenpageElem.html(output);
+                miseenpageElem.slick();
             },
             error: function (error) {
 
             },
         });
     })
-})(jQuery);
+});
