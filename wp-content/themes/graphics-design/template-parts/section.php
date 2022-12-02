@@ -51,16 +51,21 @@
                     <img src="<?= $slideImage ?>" alt="images not found">
                     <div class="cover">
                         <div class="container">
-                            <div class="header-content wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                            <div class="header-content wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
                                 <?php if ($post->post_content !== ''): ?>
                                     <div class="line"></div>
                                 <?php endif; ?>
-                                <div class="k-header-inside-1"><?= the_title() ?></div>
-                                <div class="k-header-inside-2"><?= $slideFirstTitle ?></div>
-                                <div class="k-header-inside-3"><?= $slideThirdTitle ?></div>
+                                <div class="content-effect">
+                                    <div class="k-header-inside-1 wow bounceInLeft" data-wow-duration="1.5s"
+                                         data-wow-delay="1.5s"><?= the_title() ?></div>
+                                    <div class="k-header-inside-1 wow bounceInLeft" data-wow-duration="1.5s"
+                                         data-wow-delay="1.5s"><?= the_title() ?></div>
+                                </div>
+                                <div class="k-header-inside-2 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><?= $slideFirstTitle ?></div>
+                                <div class="k-header-inside-3 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><?= $slideThirdTitle ?></div>
                             </div>
-                            <div class="k-header-ouside-1"><?= $slideSecondTitle ?></div>
-                            <div class="k-header-ouside-2"><?= $post->post_content; ?></div>
+                            <div class="k-header-ouside-1 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><?= $slideSecondTitle ?></div>
+                            <div class="k-header-ouside-2 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><?= $post->post_content; ?></div>
                         </div>
                     </div>
                 </div>

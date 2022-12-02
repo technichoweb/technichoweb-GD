@@ -39,7 +39,7 @@
                     <div class="footer-link">
                         <h6 class="footer-title">Galeries</h6>
                         <div>
-                            <a class="go-to-portfolio" href="#"><img class="darker rounded float-left mx-auto d-block w-50" src="<?php echo get_template_directory_uri().'/assets/images/image_galery_footer.png' ?>" alt=""></a>
+                            <a class="go-to-portfolio" href="#"><img class="darker rounded float-left mx-auto d-block image-galery-footer" src="<?php echo get_template_directory_uri().'/assets/images/image_galery_footer.png' ?>" alt=""></a>
                         </div>
                     </div> <!-- footer link -->
                 </div>
