@@ -84,7 +84,7 @@
             dots: false,
             nav: true,
             mouseDrag: false,
-            autoplay: true,
+            autoplay: false,
             animateOut: 'slideOutUp',
             responsive: {
                 0: {
