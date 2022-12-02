@@ -78,7 +78,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center pb-20">
-                    <h3 class="title">Our Portfolio</h3>
+                    <h3 class="title">Portfolio de mes créations</h3>
                     <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
                         results. Happiness guaranteed!</p>
                 </div> <!-- row -->
@@ -265,7 +265,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center pb-20">
-                    <h3 class="title">Get in touch</h3>
+                    <h3 class="title">Entrer en contact</h3>
                     <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
                         results. Happiness guaranteed!</p>
                 </div> <!-- section title -->
