@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="<?php  bloginfo('url') ?>">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png" alt="Logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight"
@@ -124,7 +124,7 @@
                    data-term="<?= $term->term_id ?>"
                    data-target="#exampleModalCenter">
                     <div class="image" >
-                       <img class="img-thumbnail"  src="<?= $image ?? $defaultImage ?>" alt="" />
+                       <img class="darker img-thumbnail"  src="<?= $image ?? $defaultImage ?>" alt="" />
                     </div>
                 </a>
             <?php } ?>
