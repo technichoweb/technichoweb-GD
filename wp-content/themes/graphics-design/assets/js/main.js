@@ -130,6 +130,15 @@ $(function() {
             scrollTop: 0,
         }, 1500);
     });
+
+    //Animate the scroll to yop
+    $('.go-to-portfolio').on('click', function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top,
+        }, 1500);
+    });
     
     
     //=====  AOS
