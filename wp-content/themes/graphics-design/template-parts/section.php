@@ -51,21 +51,18 @@
                     <img src="<?= $slideImage ?>" alt="images not found">
                     <div class="cover">
                         <div class="container">
-                            <div class="header-content wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
-                                <?php if ($post->post_content !== ''): ?>
-                                    <div class="line"></div>
-                                <?php endif; ?>
+                            <div class="header-content wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
                                 <div class="content-effect">
-                                    <div class="k-header-inside-1 wow bounceInLeft" data-wow-duration="1.5s"
-                                         data-wow-delay="1.5s"><?= the_title() ?></div>
-                                    <div class="k-header-inside-1 wow bounceInLeft" data-wow-duration="1.5s"
-                                         data-wow-delay="1.5s"><?= the_title() ?></div>
+                                    <div class="k-header-inside-1 wow " data-wow-duration="2.2s"
+                                         data-wow-delay="1.2s"><?= the_title() ?></div>
+                                    <div class="k-header-inside-1 wow " data-wow-duration="2.2s"
+                                         data-wow-delay="1.2s"><?= the_title() ?></div>
                                 </div>
-                                <div class="k-header-inside-2 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><?= $slideFirstTitle ?></div>
-                                <div class="k-header-inside-3 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><?= $slideThirdTitle ?></div>
+                                <div class="k-header-inside-2 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s"><?= $slideFirstTitle ?></div>
+                                <div class="k-header-inside-3 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s"><?= $slideThirdTitle ?></div>
                             </div>
-                            <div class="k-header-ouside-1 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><?= $slideSecondTitle ?></div>
-                            <div class="k-header-ouside-2 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"><?= $post->post_content; ?></div>
+                            <div class="k-header-ouside-1 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s"><?= $slideSecondTitle ?></div>
+                            <div class="k-header-ouside-2 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s"><?= $post->post_content; ?></div>
                         </div>
                     </div>
                 </div>
@@ -263,6 +260,59 @@
 </script>
 <!--====== portfolio PART ENDS ======-->
 
+<!-- Counter Section Start -->
+<section id="counter" class="section-padding">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="row">
+                    <!-- Start counter -->
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="counter-box wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="fact-count">
+                                <h3><span class="counter">41</span></h3>
+                                <p>Logos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End counter -->
+                    <!-- Start counter -->
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="counter-box wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="fact-count">
+                                <h3><span class="counter">123</span></h3>
+                                <p>Carte de visite</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End counter -->
+                    <!-- Start counter -->
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="counter-box wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="fact-count">
+                                <h3><span class="counter">395</span></h3>
+                                <p>Affiches</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End counter -->
+                    <!-- Start counter -->
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="counter-box wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="fact-count">
+                                <h3><span class="counter">68</span></h3>
+                                <p>Brochures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End counter -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counter Section End -->
 <!--====== CONTACT TWO PART START ======-->
 <section id="contact" class="contact-area">
     <div class="container">
