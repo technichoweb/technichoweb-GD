@@ -74,16 +74,18 @@
 
 <!--====== portfolio PART START ======-->
 <section id="portfolio" class="portfolio-area">
-    <div class="container">
+    <div class="container-fluid section-container">
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center pb-20">
-                    <h3 class="title">Portfolio de mes créations</h3>
-                    <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                        results. Happiness guaranteed!</p>
+                    <h3 class="title section-header-title">Portfolio</h3>
+                    <p class="text section-text">Je vous accompagne dans la création de votre identité visuel <br> avec professionnalisme et simplicité </p>
                 </div> <!-- row -->
             </div>
         </div> <!-- row -->
+    </div>
+    <div class="container">
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="portfolio-menu pt-30 text-center">

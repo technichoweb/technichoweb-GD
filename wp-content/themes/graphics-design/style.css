@@ -567,3 +567,18 @@ effect header
     color: #fff;
     font-size: 16px;
 }
+
+.section-container{
+    background-color: #000;
+}
+.section-header-title{
+    color: #CFB2A8 !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    padding-top: 19px;
+}
+.section-text{
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
