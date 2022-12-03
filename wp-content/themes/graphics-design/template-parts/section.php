@@ -82,8 +82,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center pb-20">
-                    <h3 class="title section-header-title">Portfolio</h3>
-                    <p class="text section-text">Je vous accompagne dans la création de votre identité visuel <br> avec professionnalisme et simplicité </p>
+                    <h3 class="title section-header-title wow fadeInUp" data-wow-delay="0.2s">Portfolio</h3>
+                    <p class="text section-text wow fadeInUp" data-wow-delay="0.2s">Je vous accompagne dans la création de votre identité visuel <br> avec professionnalisme et simplicité </p>
                 </div> <!-- row -->
             </div>
         </div> <!-- row -->
