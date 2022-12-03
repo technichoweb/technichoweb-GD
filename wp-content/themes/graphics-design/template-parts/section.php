@@ -48,7 +48,11 @@
                 $slideThirdTitle = get_field('gd_third_title', $post->ID);
                 ?>
                 <div class="item">
-                    <img src="<?= $slideImage ?>" alt="images not found">
+                    <video autoplay muted loop id="bg-video">
+                        <source src="<?php echo get_template_directory_uri() . '/assets/images/pexels-arthouse-studio' ?>"
+                                type="video/mp4"/>
+                    </video>
+<!--                    <img src="--><?//= $slideImage ?><!--" alt="images not found">-->
                     <div class="cover">
                         <div class="container">
                             <div class="header-content wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
