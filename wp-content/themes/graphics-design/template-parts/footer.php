@@ -85,7 +85,7 @@
             loop: true,
             margin: 10,
             dots: false,
-            nav: true,
+            nav: false,
             mouseDrag: false,
             autoplay: false,
             animateOut: 'slideOutUp',
