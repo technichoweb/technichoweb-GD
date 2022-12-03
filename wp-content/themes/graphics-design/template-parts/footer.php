@@ -66,6 +66,9 @@
             </div>
         </div>
     </div>
+    <div class="nav">
+        <div class="statusBar"></div>
+    </div>
 </footer>
 
 <div class="main__bg"></div>

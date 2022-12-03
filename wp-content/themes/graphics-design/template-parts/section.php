@@ -265,24 +265,24 @@
 <section id="contact" class="contact-area">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="section-title text-center pb-20">
-                    <h3 class="title">Entrer en contact</h3>
-                    <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
-                        results. Happiness guaranteed!</p>
+                    <h3 class="title contact-header-title">Je suis disponible pour un travail indépendant.</h3>
+                    <p class="text">Écrivez-moi si vous avez envie de discuter.</p>
                 </div> <!-- section title -->
             </div>
         </div> <!-- row -->
         <div class="row">
             <div class="col-lg-6">
                 <div class="contact-two mt-50 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                    <h4 class="contact-title">Lets talk about the project</h4>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam unde repellendus
-                        delectus facilis quia consequatur maxime perferendis! Sequi, modi consequatur.</p>
+                    <h4 class="contact-title">L’identité visuelle d’une société fait partie intégrante
+                        de la stratégie de communication. Véritable carte d’identité
+                        graphique, elle véhicule l’image de votre entreprise.</h4>
+                    <p class="text">Positionnement, couleurs, typographie , déclinaison , etc ...</p>
                     <ul class="contact-info">
-                        <li><i class="lni-money-location"></i> Elizabeth St, Melbourne, Australia</li>
-                        <li><i class="lni-phone-handset"></i> +333 789-321-654</li>
-                        <li><i class="lni-envelope"></i> hello@ayroui.com</li>
+                        <li><i class="lni-money-location"></i> Créa-Graphic Design</li>
+                        <li><i class="lni-phone-handset"></i> +261 34 06 760 38</li>
+                        <li><i class="lni-envelope"></i> zooomcanonn@gmail.com</li>
                     </ul>
                 </div> <!-- contact two -->
             </div>

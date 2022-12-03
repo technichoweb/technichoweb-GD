@@ -582,3 +582,80 @@ effect header
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.contact-header-title{
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 30px !important;
+}
+
+/**
+progress bar
+ */
+
+
+.window {
+    height: 600px;
+    width: 800px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav h1 {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 1.5em;
+    font-size: 1.5em;
+}
+.nav .statusBar {
+    width: 100%;
+    height: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.nav .statusBar:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -100%;
+    will-change: transform;
+    background: linear-gradient(90deg, var(--red) 0%,
+    var(--red)  40%,
+    var(--dark) 25%,
+    var(--dark) 37.5%,
+    var(--gray-dark) 37.5%,
+    var(--gray-dark) 50%,
+    var(--red) 50%,
+    var(--red) 75%,
+    var(--dark) 75%,
+    var(--dark) 87.5%,
+    var(--gray-dark) 87.5%,
+    var(--gray-dark) 100%);
+    -webkit-animation: 5.3s progress ease infinite;
+    animation: 5.3s progress ease infinite;
+}
+
+@-webkit-keyframes progress {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(50%);
+    }
+}
+
+@keyframes progress {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(50%);
+    }
+}
