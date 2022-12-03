@@ -638,8 +638,10 @@ progress bar
     var(--dark) 87.5%,
     var(--gray-dark) 87.5%,
     var(--gray-dark) 100%);
-    -webkit-animation: 5.3s progress ease infinite;
-    animation: 5.3s progress ease infinite;
+    height: 80%;
+    -webkit-animation: 40s progress ease infinite;
+    animation: 40s progress ease infinite;
+    animation-timing-function: cubic-bezier(0, -0.02, 1, 0.99)
 }
 
 @-webkit-keyframes progress {
