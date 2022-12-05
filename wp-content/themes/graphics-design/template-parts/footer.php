@@ -17,8 +17,8 @@
                             Mes réalisations
                         </div>
                         <div class="social-network">
-                            <span><a href="https://fr.linkedin.com/"><img src="<?php echo get_template_directory_uri().'/assets/images/linkedin-logo.png' ?>" alt=""></a></span>
-                            <span><a href="https://www.facebook.com"><img src="<?php echo get_template_directory_uri().'/assets/images/facebook-logo.png' ?>" alt=""></a></span>
+                            <span><a href="<?php echo get_option('tw_facebook_url'); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/linkedin-logo.png' ?>" alt=""></a></span>
+                            <span><a href="<?php echo get_option('tw_linkedin_url'); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/facebook-logo.png' ?>" alt=""></a></span>
                         </div>
                     </div> <!-- footer link -->
                 </div>

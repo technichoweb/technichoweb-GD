@@ -172,7 +172,7 @@ function my_cool_plugin_create_menu() {
 
 function register_tw_plugin_settings() {
     //register our settings
-    $inputNames = ['tw_phone','tw_email','tw_header_title','tw_typewriter_text','tw_address'];
+    $inputNames = ['tw_phone','tw_email','tw_header_title','tw_typewriter_text','tw_address','tw_website','tw_facebook_url','tw_linkedin_url'];
     foreach ($inputNames as $inputName){
         register_setting( 'tw_plugin-settings-group', $inputName);
     }
@@ -221,6 +221,18 @@ function tw_plugin_settings_page() {
                 <tr valign="top">
                     <th scope="row">Adresse</th>
                     <td><input type="text" name="tw_address" value="<?php echo esc_attr( get_option('tw_address') ); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">URL Website</th>
+                    <td><input type="url" name="tw_website" value="<?php echo esc_attr( get_option('tw_website') ); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">URL Facebook</th>
+                    <td><input type="url" name="tw_facebook_url" value="<?php echo esc_attr( get_option('tw_facebook_url') ); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">URL Linkedin</th>
+                    <td><input type="url" name="tw_linkedin_url" value="<?php echo esc_attr( get_option('tw_linkedin_url') ); ?>" /></td>
                 </tr>
             </table>
             <?php submit_button(); ?>
