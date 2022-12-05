@@ -106,7 +106,7 @@ header .item .cover .header-content .line {
     float: right;
     color: #fff;
     font-weight: bold;
-    padding-left: 46%
+    padding-left: 50%
 }
 
 .k-header-inside-3 span {
@@ -773,22 +773,22 @@ img.darker:hover {
     }
 
     .k-header-inside-2 {
-        font-size: 36px;
+        font-size: 44px;
         color: #fff;
         float: right;
         font-weight: bold;
         text-transform: uppercase;
-        padding-top: 42px
-    }
+        padding-top: 55px;}
 
     .k-header-inside-1 {
-        font-size: 41px;
+        font-size: 50px;
         font-weight: bold;
         color: #F9D1C5;
         float: left;
         padding-right: 28px;
-        text-transform: uppercase
+        text-transform: uppercase;
     }
+
 
     .k-header-inside-3 {
         float: right;

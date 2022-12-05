@@ -49,7 +49,7 @@
                 ?>
                 <div class="item">
                     <video autoplay muted loop id="bg-video">
-                        <source src="<?php echo get_template_directory_uri() . '/assets/images/pexels-arthouse-studio' ?>"
+                        <source src="<?php echo get_template_directory_uri() . '/assets/images/pexels-arthouse-studio.mp4' ?>"
                                 type="video/mp4"/>
                     </video>
 <!--                    <img src="--><?//= $slideImage ?><!--" alt="images not found">-->
