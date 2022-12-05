@@ -28,8 +28,15 @@
                         <ul>
                             <li><a href="#"><i class="lni-facebook-filled"></i> Alexandre M.</a></li>
                             <li><a href="#"><i class="lni lni-display"></i> Studio de création visuel</a></li>
-                            <li><a href="#"><i class="lni lni-phone"></i> +261 34 06 760 38</a></li>
-                            <li><a href="#"><i class="lni lni-envelope"></i> zooomcanonn@gmail.com</a></li>
+                            <?php if (get_option('tw_phone') !== "" && $phoneNumber = get_option('tw_phone')): ?>
+                                <li><a href="<?= $phoneNumber ?>"><i class="lni lni-phone"></i>
+                                        <?php echo get_option('tw_phone') ?></a></li>
+                            <?php endif; ?>
+                            <?php if (get_option('tw_email') !== "" && $emailAddress = get_option('tw_email')): ?>
+                                <li><a href="<?php echo get_option('tw_email') ?>"><i
+                                                class="lni lni-envelope"></i> <?php echo get_option('tw_email') ?></a>
+                                </li>
+                            <?php endif; ?>
                             <li><a href="#"><i class="lni lni-world"></i> www.graphicdesign.com</a></li>
                             <li><a href="#"><i class="lni lni-skype"></i> Graphics</a></li>
                         </ul>

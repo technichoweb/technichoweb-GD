@@ -155,3 +155,75 @@ function get_data_images()
 
     wp_send_json($result);
 }
+
+
+// create custom plugin settings menu
+add_action('admin_menu', 'my_cool_plugin_create_menu');
+
+function my_cool_plugin_create_menu() {
+
+    //create new top-level menu
+    add_menu_page('TW Theme config', 'Configuration', 'administrator', __FILE__, 'tw_plugin_settings_page' , plugins_url('/images/icon.png', __FILE__) );
+
+    //call register settings function
+    add_action( 'admin_init', 'register_tw_plugin_settings' );
+}
+
+
+function register_tw_plugin_settings() {
+    //register our settings
+    $inputNames = ['tw_phone','tw_email','tw_header_title','tw_typewriter_text','tw_address'];
+    foreach ($inputNames as $inputName){
+        register_setting( 'tw_plugin-settings-group', $inputName);
+    }
+}
+
+/**
+ * config page
+ */
+function tw_plugin_settings_page() {
+    ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.2.0/tinymce.min.js" integrity="sha512-tofxIFo8lTkPN/ggZgV89daDZkgh1DunsMYBq41usfs3HbxMRVHWFAjSi/MXrT+Vw5XElng9vAfMmOWdLg0YbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        tinymce.init({
+            selector: '#headerTitle',
+            height: 300,
+            width: 800,
+        });
+    </script>
+    <div class="wrap">
+        <h1>Configuration</h1>
+        <form method="post" action="options.php">
+            <?php settings_fields( 'tw_plugin-settings-group' ); ?>
+            <?php do_settings_sections( 'tw_plugin-settings-group' ); ?>
+<!--            <table class="form-table">-->
+<!--                <tr valign="top">-->
+<!--                    <th scope="row"></th>-->
+<!--                    <p><textarea id="headerTitle" name="tw_header_title">-->
+<!--                            --><?php //echo esc_attr( get_option('tw_header_title') ); ?>
+<!--                        </textarea></p>-->
+<!--                </tr>-->
+<!--                <tr valign="top">-->
+<!--                    <th scope="row">Typewriter text</th>-->
+<!--                    <td><input type="text" name="tw_typewriter_text" value="--><?php //echo esc_attr( get_option('tw_typewriter_text') ); ?><!--" /></td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--            <hr>-->
+            <table class="form-table">
+                <tr valign="top">
+                    <th scope="row">Numéro téléphone</th>
+                    <td><input type="text" name="tw_phone" value="<?php echo esc_attr( get_option('tw_phone') ); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Email</th>
+                    <td><input type="text" name="tw_email" value="<?php echo esc_attr( get_option('tw_email') ); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Adresse</th>
+                    <td><input type="text" name="tw_address" value="<?php echo esc_attr( get_option('tw_address') ); ?>" /></td>
+                </tr>
+            </table>
+            <?php submit_button(); ?>
+        </form>
+    </div>
+<?php }

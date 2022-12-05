@@ -285,8 +285,10 @@
                     <p class="text">Positionnement, couleurs, typographie , déclinaison , etc ...</p>
                     <ul class="contact-info">
                         <li><i class="lni-money-location"></i> Créa-Graphic Design</li>
-                        <li><i class="lni-phone-handset"></i> +261 34 06 760 38</li>
-                        <li><i class="lni-envelope"></i> zooomcanonn@gmail.com</li>
+                        <li><i class="lni-phone-handset"></i> <?php echo get_option('tw_phone') ?></li>
+                        <?php if (get_option('tw_email') !== "" && $emailAddress = get_option('tw_email')): ?>
+                            <li><i class="lni-envelope"></i> <?= $emailAddress ?></li>
+                        <?php endif; ?>
                     </ul>
                 </div> <!-- contact two -->
             </div>
