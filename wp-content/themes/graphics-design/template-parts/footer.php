@@ -2,7 +2,7 @@
 <footer id="footer" class="footer-area">
     <?php wp_footer(); ?>
     <div class="footer-widget">
-        <div class="container-fluid">
+        <div class="container-fluid container-fluid-full">
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
                     <div class="footer-link">
