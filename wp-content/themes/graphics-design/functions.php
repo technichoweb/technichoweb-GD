@@ -239,3 +239,8 @@ function tw_plugin_settings_page() {
         </form>
     </div>
 <?php }
+
+function add_cors_http_header(){
+    header("Access-Control-Allow-Origin: *");
+}
+add_action('init','add_cors_http_header');
