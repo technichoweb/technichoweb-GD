@@ -3,7 +3,6 @@ jQuery(document).ready(function () {
         let term_id = $(this).data('term');
         let ajaxurl = $(this).data('url');
         let miseenpageElem = $('.miseenpages');
-        miseenpageElem.html("");
         $.ajax({
             url: ajaxurl,
             type: 'POST',
@@ -14,7 +13,9 @@ jQuery(document).ready(function () {
                 miseenpageElem.slick('destroy');
                 let output = ''
                 $.each(response, function(pos, el) {
+                    miseenpageElem.parents('.modal').attr('id','modal-'+el.term_id);
                     output += '<div><img class="img-fluid" src="'+el.url_image+'" alt=""></div>';
+                    $("#modal-"+el.term_id).modal({ show: true});
                 });
                 miseenpageElem.html(output);
                 miseenpageElem.slick({
@@ -23,6 +24,7 @@ jQuery(document).ready(function () {
                     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
                     nextArrow: '<button class="slide-arrow next-arrow"></button>'
                 });
+
             },
             error: function (error) {
 

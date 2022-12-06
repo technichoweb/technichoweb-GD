@@ -554,7 +554,9 @@ img.darker:hover {
 }
 
 .section-container {
-    background-color: #000
+    background-color: #000;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .section-header-title {
