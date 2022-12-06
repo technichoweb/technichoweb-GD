@@ -652,6 +652,9 @@ img.darker:hover {
 responsive
  */
 @media (min-width: 320px) and (max-width: 374px) {
+    .header-content{
+        display: flex;
+    }
     .k-header-inside-2 {
         font-size: 26px;
     }
@@ -662,6 +665,7 @@ responsive
 
     .k-header-inside-3 {
         padding-left: 0;
+        display: none;
     }
 
     .k-header-ouside-2 {
@@ -725,6 +729,9 @@ responsive
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
+    .header-content{
+        display: flex;
+    }
     .k-header-inside-2 {
         font-size: 38px !important;
     }
@@ -736,6 +743,7 @@ responsive
     .k-header-inside-3 {
         padding-left: 0px;
         padding-right: 14%;
+        display: none;
     }
 
     .k-header-ouside-2 {
@@ -798,6 +806,9 @@ responsive
     }
 }
 @media (min-width: 425px) and (max-width: 767px) {
+    .header-content{
+        display: flex;
+    }
     .k-header-inside-2 {
         font-size: 44px !important;
         padding-top: 60px !important;
@@ -807,6 +818,7 @@ responsive
         font-size: 50px;
     }
     .k-header-inside-3 {
+        display: none;
         padding-left: 0px;
         padding-right: 20%;
     }

@@ -55,7 +55,7 @@
 <!--                    <img src="--><?//= $slideImage ?><!--" alt="images not found">-->
                     <div class="cover">
                         <div class="container">
-                            <div class="header-content wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                            <div class=" text-justify header-content wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
                                 <div class="content-effect">
                                     <div class="k-header-inside-1 wow " data-wow-duration="2.2s"
                                          data-wow-delay="1.2s"><?= the_title() ?></div>
