@@ -31,7 +31,7 @@
     </div> <!-- navbar area -->
     <div id="home">
         <header>
-            <div class="owl-carousel owl-theme">
+            <div class="banner-main">
                 <?php
                 $args = array(
                     'post_type' => 'gdslider',
