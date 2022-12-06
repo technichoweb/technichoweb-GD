@@ -298,7 +298,7 @@
             <div class="col-lg-6">
                 <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="1.5s"
                      data-wow-delay="0.5s">
-                     <?php echo do_shortcode('[contact-form-7 id="29" title="contact"]') ?>
+                     <?php echo do_shortcode('[contact-form-7 id="147" title="contact"]') ?>
                 </div> <!-- contact form -->
             </div>
         </div> <!-- row -->
