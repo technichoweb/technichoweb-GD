@@ -10,6 +10,9 @@
     z-index: -1
 }
 
+html{
+    overflow-x: hidden;
+}
 .layer1 {
     animation-direction: alternate-reverse;
     animation-duration: 8s
@@ -652,6 +655,9 @@ img.darker:hover {
 responsive
  */
 @media (min-width: 320px) and (max-width: 374px) {
+    header .item .cover .header-content{
+        padding: 70px !important;
+    }
     .header-content{
         display: flex;
     }
@@ -705,7 +711,7 @@ responsive
         text-align: center;
     }
     .rounded-buttons{
-        padding-left: 30%;
+        padding-left: 35%;
     }
     .footer-area .footer-widget .footer-title {
         font-size: 20px;
@@ -729,6 +735,9 @@ responsive
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
+    header .item .cover .header-content{
+        padding: 70px !important;
+    }
     .header-content{
         display: flex;
     }
@@ -783,7 +792,7 @@ responsive
         text-align: center;
     }
     .rounded-buttons{
-        padding-left: 30%;
+        padding-left: 35%;
     }
     .footer-area .footer-widget .footer-title {
         font-size: 20px;
@@ -792,7 +801,7 @@ responsive
         text-align: center;
         font-size: 20px;}
     .social-network{
-        padding-left: 31%;
+        padding-left: 36%;
     }
     .footer-area .footer-widget .footer-link ul {
         margin-top: 0;
@@ -806,6 +815,9 @@ responsive
     }
 }
 @media (min-width: 425px) and (max-width: 767px) {
+    header .item .cover .header-content{
+        padding: 70px !important;
+    }
     .header-content{
         display: flex;
     }
@@ -860,7 +872,7 @@ responsive
         text-align: center;
     }
     .rounded-buttons{
-        padding-left: 33%;
+        padding-left: 35%;
     }
     .footer-area .footer-widget .footer-title {
         font-size: 20px;
@@ -883,6 +895,7 @@ responsive
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+
     .k-header-inside-2 {
         font-size: 75px !important;
         padding-top: 98px !important;
@@ -923,5 +936,5 @@ responsive
     position: relative;
     max-height: 100%;
     overflow: hidden;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
 }
