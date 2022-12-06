@@ -19,7 +19,7 @@ function gd_register_assets()
     wp_enqueue_script('counterup', get_template_directory_uri() . '/assets/js/jquery.counterup.min.js', array(), '1.0', true);
     wp_enqueue_script('waipoint', get_template_directory_uri() . '/assets/js/waypoints.min.js', array(), '1.0', true);
     wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/main.js', array('jquery-custom'), '1.0', true);
-    wp_enqueue_script('owl.carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js',array(), '1.0', true);
+//    wp_enqueue_script('owl.carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js',array(), '1.0', true);
 
     // Déclarer le fichier style.css à la racine du thème
     wp_enqueue_style('style_theme', get_stylesheet_uri(), array(), '1.0');
@@ -32,9 +32,9 @@ function gd_register_assets()
     wp_enqueue_style('animate', get_template_directory_uri() . '/assets/css/animate.css', array(), '1.0');
     wp_enqueue_style('default-min', get_template_directory_uri() . '/assets/css/default.css', array(), '1.0');
     wp_enqueue_style('style', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0');
-    wp_enqueue_style('owl.carousel.css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', array(), '1.0');
-    wp_enqueue_style('owl.theme.default', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css', array(), '1.0');
-    wp_enqueue_style('owl.carousel.animate.css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', array(), '3.7.0');
+//    wp_enqueue_style('owl.carousel.css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css', array(), '1.0');
+//    wp_enqueue_style('owl.theme.default', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css', array(), '1.0');
+//    wp_enqueue_style('owl.carousel.animate.css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css', array(), '3.7.0');
 }
 
 add_action('wp_enqueue_scripts', 'gd_register_assets');
