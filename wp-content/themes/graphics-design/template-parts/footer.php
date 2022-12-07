@@ -2,7 +2,7 @@
 <footer id="footer" class="footer-area">
     <?php wp_footer(); ?>
     <div class="footer-widget">
-        <div class="container-fluid container-fluid-full">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
                     <div class="footer-link">
@@ -88,7 +88,7 @@
 <!--====== BACK TOP TOP PART ENDS ======-->
 <script>
     jQuery(document).ready(function ($) {
-        $('.owl-carousel').owlCarousel({
+        /*$('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
             dots: false,
@@ -107,7 +107,7 @@
                     items: 1
                 }
             }
-        });
+        });*/
         $(document).ready(function () {
             $('.miseenpages').slick({
                 speed: 1500,
