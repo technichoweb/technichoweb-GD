@@ -952,12 +952,18 @@ responsive
 }
 
 .zoom:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(0.8); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
 
 .img-thumbnail{
     padding: 0 !important;
     border: 0 !important;
     border-radius: 0 !important;
     max-width: 146% !important;
+}
+
+.img-gallery-blur:hover{
+    webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(1px);
 }
