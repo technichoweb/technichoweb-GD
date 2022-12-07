@@ -172,7 +172,7 @@ function my_cool_plugin_create_menu() {
 
 function register_tw_plugin_settings() {
     //register our settings
-    $inputNames = ['tw_phone','tw_email','tw_header_title','tw_typewriter_text','tw_address','tw_website','tw_facebook_url','tw_linkedin_url'];
+    $inputNames = ['tw_phone','tw_email','tw_header_title','tw_skype_url','tw_typewriter_text','tw_address','tw_website','tw_facebook_url','tw_linkedin_url'];
     foreach ($inputNames as $inputName){
         register_setting( 'tw_plugin-settings-group', $inputName);
     }
@@ -225,6 +225,10 @@ function tw_plugin_settings_page() {
                 <tr valign="top">
                     <th scope="row">URL Website</th>
                     <td><input type="url" name="tw_website" value="<?php echo esc_attr( get_option('tw_website') ); ?>" /></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">URL Skype</th>
+                    <td><input type="url" name="tw_skype_url" value="<?php echo esc_attr( get_option('tw_skype_url') ); ?>" /></td>
                 </tr>
                 <tr valign="top">
                     <th scope="row">URL Facebook</th>

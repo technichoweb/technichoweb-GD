@@ -447,7 +447,7 @@ img.darker:hover {
 }
 
 .image-galery-footer {
-    width: 65% !important
+    width: 100% !important
 }
 
 .content-effect {
@@ -725,9 +725,9 @@ responsive
     .footer-area .footer-widget .footer-link ul {
         margin-top: 0;
         text-align: center;}
-    .go-to-portfolio{
+    /*.go-to-portfolio{
         padding-left: 29%;
-    }
+    }*/
     .footer-area .footer-widget .footer-link p {
         text-align: center;
         font-size: 12px !important;
@@ -806,9 +806,9 @@ responsive
     .footer-area .footer-widget .footer-link ul {
         margin-top: 0;
         text-align: center;}
-    .go-to-portfolio{
+    /*.go-to-portfolio{
         padding-left: 29%;
-    }
+    }*/
     .footer-area .footer-widget .footer-link p {
         text-align: center;
         font-size: 12px !important;
@@ -886,9 +886,9 @@ responsive
     .footer-area .footer-widget .footer-link ul {
         margin-top: 0;
         text-align: center;}
-    .go-to-portfolio{
+   /* .go-to-portfolio{
         padding-left: 29%;
-    }
+    }*/
     .footer-area .footer-widget .footer-link p {
         text-align: center;
         font-size: 12px !important;

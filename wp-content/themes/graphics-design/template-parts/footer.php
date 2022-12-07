@@ -22,11 +22,15 @@
                         </div>
                     </div> <!-- footer link -->
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-4 col-sm-6">
                     <div class="footer-link">
                         <h6 class="footer-title">Contact</h6>
                         <ul>
-                            <li><a href="#"><i class="lni-facebook-filled"></i> Alexandre M.</a></li>
+                            <?php if (get_option('tw_facebook_url') !== "" && $websiteUrl = get_option('tw_facebook_url')): ?>
+                                <li><a href="<?php echo get_option('tw_facebook_url') ?>"><i
+                                                class="lni lni-facebook-filled"></i> Alexandre M.</a>
+                                </li>
+                            <?php endif; ?>
                             <li><a href="#"><i class="lni lni-display"></i> Studio de création visuel</a></li>
                             <?php if (get_option('tw_phone') !== "" && $phoneNumber = get_option('tw_phone')): ?>
                                 <li><a href="<?= $phoneNumber ?>"><i class="lni lni-phone"></i>
@@ -37,12 +41,20 @@
                                                 class="lni lni-envelope"></i> <?php echo get_option('tw_email') ?></a>
                                 </li>
                             <?php endif; ?>
-                            <li><a href="#"><i class="lni lni-world"></i> www.graphicdesign.com</a></li>
-                            <li><a href="#"><i class="lni lni-skype"></i> Graphics</a></li>
+                            <?php if (get_option('tw_website') !== "" && $websiteUrl = get_option('tw_website')): ?>
+                                <li><a href="<?php echo get_option('tw_website') ?>"><i
+                                                class="lni lni-world"></i> <?php echo get_option('tw_website') ?></a>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (get_option('tw_skype_url') !== "" && $websiteUrl = get_option('tw_skype_url')): ?>
+                                <li><a href="<?php echo get_option('tw_skype_url') ?>"><i
+                                                class="lni lni-skype"></i> <?php echo get_option('tw_skype_url') ?></a>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                     </div> <!-- footer link -->
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-lg-2 col-sm-6">
                     <div class="footer-link">
                         <h6 class="footer-title">Galeries</h6>
                         <div>
