@@ -245,7 +245,7 @@ header:hover .owl-next {
     opacity: 1
 }
 
-.img-thumbnail {
+.image-thumbnail {
     width: 100% !important;
     height: 240px !important;
     object-fit: cover;
@@ -447,7 +447,7 @@ img.darker:hover {
 }
 
 .image-galery-footer {
-    width: 100% !important
+    width: 146% !important
 }
 
 .content-effect {
@@ -911,7 +911,7 @@ responsive
     }
 
 }
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media  (min-width: 1024px) and (max-width: 1439px) {
     .k-header-inside-2 {
         font-size: 49px !important;
     }
@@ -944,4 +944,20 @@ responsive
 
 .nav-item {
     transition: all 0.6s ease-in-out;
+}
+
+.zoom {
+    transition: transform 0.8s; /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.img-thumbnail{
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    max-width: 146% !important;
 }

@@ -132,7 +132,7 @@
                    data-term="<?= $term->term_id ?>"
                    data-target="#modal-<?php echo $term->term_id ?>">
                     <div class="image" >
-                       <img class="darker img-thumbnail"  src="<?= $image ?? $defaultImage ?>" alt="" />
+                       <img class="darker image-thumbnail"  src="<?= $image ?? $defaultImage ?>" alt="" />
                     </div>
                 </a>
             <?php } ?>

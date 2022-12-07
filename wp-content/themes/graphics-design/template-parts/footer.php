@@ -57,8 +57,33 @@
                 <div class="col-lg-2 col-sm-6">
                     <div class="footer-link">
                         <h6 class="footer-title">Galeries</h6>
-                        <div>
-                            <a class="go-to-portfolio" href="#"><img class="darker rounded float-left mx-auto d-block image-galery-footer" src="<?php echo get_template_directory_uri().'/assets/images/image_galery_footer.png' ?>" alt=""></a>
+                        <div class="row">
+                            <div class="col ">
+                                <a class="zoom go-to-portfolio" href="#">
+
+                                <img class="img-thumbnail"
+                                     src="<?php echo get_template_directory_uri() . '/assets/images/Graphic-12' ?>"
+                                     alt=""></a>
+                            </div>
+                            <div class="col ">
+                                <a class="zoom go-to-portfolio" href="#">
+                                    <img class="img-thumbnail"
+                                         src="<?php echo get_template_directory_uri() . '/assets/images/Graphic-3.jpg' ?>"
+                                         alt=""></a>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col ">
+                                <a class="zoom go-to-portfolio" href="#">
+                                    <img class="img-thumbnail"
+                                         src="<?php echo get_template_directory_uri() . '/assets/images/Graphic-dids.jpg' ?>"
+                                         alt=""></a>
+                            </div>
+                            <div class="col ">
+                                <a class="zoom go-to-portfolio" href="#">
+                                    <img class="img-thumbnail"
+                                         src="<?php echo get_template_directory_uri() . '/assets/images/Graphic-10' ?>"
+                                         alt=""></a>
+                            </div>
                         </div>
                     </div> <!-- footer link -->
                 </div>
