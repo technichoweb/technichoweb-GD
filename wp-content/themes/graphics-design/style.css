@@ -913,7 +913,8 @@ responsive
 }
 @media  (min-width: 1024px) and (max-width: 1439px) {
     .k-header-inside-2 {
-        font-size: 49px !important;
+        /* font-size: 49px !important; */
+        padding-top: 23px !important;
     }
 
     .k-header-inside-1 {
