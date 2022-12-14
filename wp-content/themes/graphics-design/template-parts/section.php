@@ -136,6 +136,8 @@
                     </div>
                 </a>
             <?php } ?>
+
+
             <?php
             $args = array(
                 'post_type' => 'gdclipping',
