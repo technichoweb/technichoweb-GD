@@ -156,6 +156,7 @@ function get_data_images()
         $result[] = [
             'slug' => $term->slug,
             'IsSlickable' => $isSlickable == 'background' || $isSlickable == 'brochure',
+            'BgImage' => $isSlickable == 'background',
             'term_id' => $term->term_id,
             'url_image' => get_field('gd_photo', $taxonomyName . '_' . $term->term_id)['url']
         ];

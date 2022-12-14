@@ -967,3 +967,7 @@ responsive
     webkit-filter: blur(1px); /* Chrome, Safari, Opera */
     filter: blur(1px);
 }
+
+.modal-open{
+    background-color: black !important;
+}

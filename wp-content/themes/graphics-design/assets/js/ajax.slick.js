@@ -11,12 +11,17 @@ jQuery(document).ready(function () {
                 action: 'get_images'
             }, success: function (response) {
                 let isSlickable = !response[0].IsSlickable || response[0].IsSlickable === undefined
+                let bgImage = response[0].BgImage || !response[0].BgImage === undefined
                 let hasClassFluid = isSlickable ? 'img-fluid' : '';
+                let isBackgroundImage = bgImage ?  'style="width: 216%;\n' +
+                    '    height: auto;\n' +
+                    '    left: 18%;\n' +
+                    '    margin-left: -50%;':'';
                 miseenpageElem.slick('destroy');
                 let output = ''
                 $.each(response, function(pos, el) {
                     miseenpageElem.parents('.modal').attr('id','modal-'+el.term_id);
-                    output += '<div><img class="'+hasClassFluid+'" src="'+el.url_image+'" alt=""></div>';
+                    output += '<div><img '+isBackgroundImage+' class="'+hasClassFluid+'" src="'+el.url_image+'" alt=""></div>';
                     $("#modal-"+el.term_id).modal({ show: true});
                 });
                 miseenpageElem.html(output);
