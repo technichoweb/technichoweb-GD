@@ -2199,7 +2199,10 @@ p {
 
 .footer-area .footer-widget .footer-link p {
     color: #fff;
-    font-size: 14px !important
+    font-size: 14px !important,
+    position: absolute;
+    margin-right: 23%;
+    text-align: justify;
 }
 
 .footer-area .footer-widget .footer-link ul li a {
