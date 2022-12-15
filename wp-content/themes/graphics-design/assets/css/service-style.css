@@ -1,15 +1,15 @@
 /*start global */
 
 @import url("https://use.fontawesome.com/releases/v5.0.6/css/all.css");
-  
-/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
 
-/** {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*    box-sizing: border-box;*/
-/*    font-family: 'Roboto', sans-serif;*/
-/*}*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
 .container {
     max-width: 1170px;
@@ -18,8 +18,8 @@
 }
 
 .codepenBG {
-  height:400px;
-  /*margin-top:30px;*/
+    height:900px;
+    margin-top:30px;
 }
 
 
@@ -30,7 +30,7 @@
     height: 2px;
     background: #BABABA;
     margin-top: 4px;
-    
+
 }
 
 .clear-fix {
@@ -46,7 +46,7 @@
 /* start of our services section */
 
 #services {
-    background: #000;
+    background: #f6f6f6;
     min-height: 530px;
     padding-top: 91px;
 }
@@ -71,59 +71,59 @@
 }
 
 #services .desc .text p {
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.5;
-  }
-  
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 /* OUR SERVICES RIGHT SIDE */
 
 #services .services {
     width: 67%;
     float: left;
-  height:500px;
-      top: 7px;
+    height:500px;
+    top: 7px;
     position: relative;
 }
-  
+
 #services .services .serviceinfo {
-  height:400px;
+    height:400px;
 }
 
-  
-  #services .services .row {
-float: left;
+
+#services .services .row {
+    float: left;
     transition: transform 0.3s 0.3s ease, top 0.4s ease;
 }
 
-    #services .services .row1 {
-      position: relative;
-      top:0px;
+#services .services .row1 {
+    position: relative;
+    top:0px;
     transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
-      left: 0px;
+    left: 0px;
 }
-  
-    #services .services .row2 {
-      position: relative;
-      top:0px;
+
+#services .services .row2 {
+    position: relative;
+    top:0px;
     transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
-      margin-left: 105px;
-         left: 0px;
+    margin-left: 105px;
+    left: 0px;
 }
-  
+
 #column-1 {
     position: relative;
     top: 11px;
     left: 0px;
-  }
-  
+}
+
 #column-2 {
     position: relative;
     top: 10px;
     left: -5px;
-  }
+}
 
-  #services .services .row1expand {
+#services .services .row1expand {
     margin-right: 0px;
     transform: rotate(0deg);
     position: relative;
@@ -132,19 +132,19 @@ float: left;
     left: 300px;
     z-index:2;
 }
-  
-    #services .services .row2expand {
+
+#services .services .row2expand {
     float: left;
     margin-right: 0px;
     transform: rotate(0deg);
     position: relative;
     top: 110px;
     transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
-          left: 195px;
-          z-index:2;
+    left: 195px;
+    z-index:2;
 }
-  
-  
+
+
 #services .services .row .service {
     display: flex;
     justify-content: center;
@@ -152,13 +152,14 @@ float: left;
     float: left;
     width: 120px;
     height: 120px;
-    background: #E72F49;
+    background: #e72f49;
     transition: all 0.3s ease;
     margin-bottom: 7px;
-      margin-left: 85px;
-  transform: rotate(45deg);
+    margin-left: 85px;
+    transform: rotate(45deg);
+/*transition: margin-left 0.3s 0.4s;*/
 }
-  
+
 #services .services .row .serviceexpand {
     display: flex;
     justify-content: center;
@@ -166,13 +167,13 @@ float: left;
     float: left;
     width: 120px;
     height: 120px;
-    background: #CFB2A8;
     transition: all 0.3s ease;
     margin-bottom: 7px;
-      margin-left: 0px;
-  transform: rotate(0deg);
+    margin-left: 0px;
+    transform: rotate(0deg);
+/*transition: margin-left 0.3s 0.4s;*/
 }
-  
+
 
 #services .services .row .selectedservice{
     display: flex;
@@ -180,28 +181,28 @@ float: left;
     align-items: center;
     width: 120px;
     height: 120px;
-    background: #E72F49;
+    background: #e72f49;
     transition: all 0.3s ease;
     margin-bottom: 7px;
-  position:relative;
+    position:relative;
 }
-  
+
 
 #services .services .row .service:hover {
-    background: #CFB2A8;
+    background: #28282e;
     color: #fff;
 }
 
 #services .services .row .service:hover .service-icon {
-    color: #CFB2A8;
+    color: #fff;
 }
 
 #servicechoicetext {
-  position:relative;
-  width: 200px;
-  height: 30px;
-  left: 390px;
-  opacity: .4;
+    position:relative;
+    width: 200px;
+    height: 30px;
+    left: 390px;
+    opacity: .4;
 }
 
 
@@ -213,11 +214,11 @@ float: left;
     font-weight: bold;
     transition: transform 0.3s ease;
 }
-  
-#services .services .row .service .service-desc p {  
-      font-size: 12px;
-  }
-  
+
+#services .services .row .service .service-desc p {
+    font-size: 10px;
+}
+
 #services .services .row .service .service-desc .service-icon  {
     font-size: 20px;
     margin-bottom: 5px;
@@ -232,77 +233,77 @@ float: left;
     #services {
         padding-top: 60px;
     }
-    
+
     #services .desc {
         width: 100%;
         float: none;
         margin-bottom: 30px;
     }
-    
+
     #services .services {
         width: 100%;
     }
-    
+
     #services .services .row {
         transform: rotate(0deg);
         margin-right: 10px;
     }
-    
+
     #services .services .row .service .service-desc {
         transform: rotate(0deg);
     }
 }
 
 #servicesdetails {
-      position: relative;
-      font-size: 14px;
+    position: relative;
+    font-size: 14px;
     line-height: 1.5;
     font-family:'Roboto', sans-serif;
-  width: 600px;
+    width: 600px;
 }
 
-#servicesdetails .invisible {
-  position:relative;
+#servicesdetails .invisibles {
+    position:relative;
     top: 60px;
     left: 70px;
-  opacity:.0;
+    opacity:.0;
     transition: all 0.5s ease;
 }
 
 #servicesdetails .visible {
-  opacity:.9;
-  position:relative;
-  top: 85px;
-  transition: all 0.5s ease;
+    opacity:.9;
+    position:relative;
+    top: 85px;
+    transition: all 0.5s ease;
 }
 
 #microassessment {
-  display: none;
-  height:0px; 
-  overflow:visible;
+    display: none;
+    height:0px;
+    overflow:visible;
 }
 #documentreview {
-  display: none;
-    height:0px; 
-  overflow:visible;
+    display: none;
+    height:0px;
+    overflow:visible;
 }
 #macroassessment {
-  display: none;
-    height:0px; 
-  overflow:visible;
+    display: none;
+    height:0px;
+    overflow:visible;
 }
 #deliverableservices {
-  display: none;
-    height:0px; 
-  overflow:visible;
+    display: none;
+    height:0px;
+    overflow:visible;
 }
 #projectexecution {
-  display: none;
-    height:0px; 
-  overflow:visible;
+    display: none;
+    height:0px;
+    overflow:visible;
 }
 #dpooutsourcing {
-  display: none;
-    height:0px; 
-  overflow:visible;
+    display: none;
+    height:0px;
+    overflow:visible;
 }
