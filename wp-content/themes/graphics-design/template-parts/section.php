@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="<?php  bloginfo('url') ?>">
+                        <a class="navbar-brand" href="<?php bloginfo('url') ?>">
                             <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png" alt="Logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarEight"
@@ -42,35 +42,40 @@
                 $query = new WP_Query($args);
                 // Loop through the obituaries:
                 while ($query->have_posts()) : $query->the_post();
-                $slideImage = get_field('gd_photo', $post->ID)['url'];
-                $slideSecondTitle = get_field('gd_second_title', $post->ID);
-                $slideFirstTitle = get_field('gd_first_title', $post->ID);
-                $slideThirdTitle = get_field('gd_third_title', $post->ID);
-                ?>
-                <div class="item">
-                    <video autoplay muted loop id="bg-video">
-                        <source src="<?php echo get_template_directory_uri() . '/assets/images/pexels-arthouse-studio.mp4' ?>"
-                                type="video/mp4"/>
-                    </video>
-<!--                    <img src="--><?//= $slideImage ?><!--" alt="images not found">-->
-                    <div class="cover">
-                        <div class="container">
-                            <div class=" text-justify header-content wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
-                                <div class="content-effect">
-                                    <div class="k-header-inside-1 wow " data-wow-duration="2.2s"
-                                         data-wow-delay="1.2s"><?= the_title() ?></div>
-                                    <div class="k-header-inside-1 wow " data-wow-duration="2.2s"
-                                         data-wow-delay="1.2s"><?= the_title() ?></div>
+                    $slideImage = get_field('gd_photo', $post->ID)['url'];
+                    $slideSecondTitle = get_field('gd_second_title', $post->ID);
+                    $slideFirstTitle = get_field('gd_first_title', $post->ID);
+                    $slideThirdTitle = get_field('gd_third_title', $post->ID);
+                    ?>
+                    <div class="item">
+                        <video autoplay muted loop id="bg-video">
+                            <source src="<?php echo get_template_directory_uri() . '/assets/images/pexels-arthouse-studio.mp4' ?>"
+                                    type="video/mp4"/>
+                        </video>
+                        <!--                    <img src="--><? //= $slideImage ?><!--" alt="images not found">-->
+                        <div class="cover">
+                            <div class="container">
+                                <div class=" text-justify header-content wow fadeInUp" data-wow-duration="1.2s"
+                                     data-wow-delay="0.2s">
+                                    <div class="content-effect">
+                                        <div class="k-header-inside-1 wow " data-wow-duration="2.2s"
+                                             data-wow-delay="1.2s"><?= the_title() ?></div>
+                                        <div class="k-header-inside-1 wow " data-wow-duration="2.2s"
+                                             data-wow-delay="1.2s"><?= the_title() ?></div>
+                                    </div>
+                                    <div class="k-header-inside-2 wow fadeInUp" data-wow-duration="1.2s"
+                                         data-wow-delay="0.2s"><?= $slideFirstTitle ?></div>
+                                    <div class="k-header-inside-3 wow fadeInUp" data-wow-duration="1.2s"
+                                         data-wow-delay="0.2s"><?= $slideThirdTitle ?></div>
                                 </div>
-                                <div class="k-header-inside-2 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s"><?= $slideFirstTitle ?></div>
-                                <div class="k-header-inside-3 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s"><?= $slideThirdTitle ?></div>
+                                <div class="k-header-ouside-1 wow fadeInUp" data-wow-duration="1.2s"
+                                     data-wow-delay="0.2s"><?= $slideSecondTitle ?></div>
+                                <div class="k-header-ouside-2 wow fadeInUp" data-wow-duration="1.2s"
+                                     data-wow-delay="0.2s"><?= $post->post_content; ?></div>
                             </div>
-                            <div class="k-header-ouside-1 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s"><?= $slideSecondTitle ?></div>
-                            <div class="k-header-ouside-2 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s"><?= $post->post_content; ?></div>
                         </div>
                     </div>
-                </div>
-                <?php break; endwhile; ?>
+                    <?php break; endwhile; ?>
             </div>
         </header>
     </div>
@@ -83,7 +88,8 @@
             <div class="col-lg-6">
                 <div class="section-title text-center pb-20">
                     <h3 class="title section-header-title wow fadeInUp" data-wow-delay="0.2s">Portfolio</h3>
-                    <p class="text section-text wow fadeInUp" data-wow-delay="0.2s">Je vous accompagne dans la création de votre identité visuel <br> avec professionnalisme et simplicité </p>
+                    <p class="text section-text wow fadeInUp" data-wow-delay="0.2s">Je vous accompagne dans la création
+                        de votre identité visuel <br> avec professionnalisme et simplicité </p>
                 </div> <!-- row -->
             </div>
         </div> <!-- row -->
@@ -112,8 +118,8 @@
                 'hide_empty' => false,
             ]);
 
-            foreach ($terms as $term){
-                if ((bool)$term->parent){
+            foreach ($terms as $term) {
+                if ((bool)$term->parent) {
                     continue;
                 }
                 $termWithoutParent = $term;
@@ -131,8 +137,8 @@
                    data-url="<?= admin_url('admin-ajax.php'); ?>"
                    data-term="<?= $term->term_id ?>"
                    data-target="#modal-<?php echo $term->term_id ?>">
-                    <div class="image" >
-                       <img class="darker image-thumbnail"  src="<?= $image ?? $defaultImage ?>" alt="" />
+                    <div class="image">
+                        <img class="darker image-thumbnail" src="<?= $image ?? $defaultImage ?>" alt=""/>
                     </div>
                 </a>
             <?php } ?>
@@ -159,10 +165,11 @@
                 <div class="col-lg-4 col-sm-6 <?= $slug ?>">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <div class="img-comp-container">
-                            <div class="img-comp-img " style="background-image: url('<?php echo get_template_directory_uri().'/assets/images/clip.png'?>')">
+                            <div class="img-comp-img "
+                                 style="background-image: url('<?php echo get_template_directory_uri() . '/assets/images/clip.png' ?>')">
                                 <img src="<?php echo $firstImage ?>" width="350" height="240">
                             </div>
-                            <div class="img-comp-img img-comp-overlay" >
+                            <div class="img-comp-img img-comp-overlay">
                                 <img src="<?php echo $secondImage ?>" width="350" height="240">
                             </div>
                         </div>
@@ -171,7 +178,8 @@
             <?php endwhile; ?>
         </div>
     </div> <!-- row -->
-    <div class="modal fade" style="background-color: rgba(0, 0, 0, 0.8);" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" style="background-color: rgba(0, 0, 0, 0.8);" id="" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -184,10 +192,13 @@
         </div>
     </div>
 </section>
-<section id="services"></section>
+<section id="services">
+
+</section>
 <script>
     /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
     initComparisons();
+
     function initComparisons() {
         var x, i;
         /*find all elements with an "overlay" class:*/
@@ -198,6 +209,7 @@
             pass the "overlay" element as a parameter when executing the compareImages function:*/
             compareImages(x[i]);
         }
+
         function compareImages(img) {
             var slider, img, clicked = 0, w, h;
             /*get the width and height of the img element*/
@@ -221,6 +233,7 @@
             slider.addEventListener("touchstart", slideReady);
             /*and released (for touch screens:*/
             window.addEventListener("touchend", slideFinish);
+
             function slideReady(e) {
                 /*prevent any other actions that may occur when moving over the image:*/
                 e.preventDefault();
@@ -230,10 +243,12 @@
                 window.addEventListener("mousemove", slideMove);
                 window.addEventListener("touchmove", slideMove);
             }
+
             function slideFinish() {
                 /*the slider is no longer clicked:*/
                 clicked = 0;
             }
+
             function slideMove(e) {
                 var pos;
                 /*if the slider is no longer clicked, exit this function:*/
@@ -246,6 +261,7 @@
                 /*execute a function that will resize the overlay image according to the cursor:*/
                 slide(pos);
             }
+
             function getCursorPos(e) {
                 var a, x = 0;
                 e = (e.changedTouches) ? e.changedTouches[0] : e;
@@ -257,6 +273,7 @@
                 x = x - window.pageXOffset;
                 return x;
             }
+
             function slide(x) {
                 /*resize the image:*/
                 img.style.width = x + "px";
@@ -300,7 +317,7 @@
             <div class="col-lg-6">
                 <div class="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="1.5s"
                      data-wow-delay="0.5s">
-                     <?php echo do_shortcode('[contact-form-7 id="147" title="contact"]') ?>
+                    <?php echo do_shortcode('[contact-form-7 id="147" title="contact"]') ?>
                 </div> <!-- contact form -->
             </div>
         </div> <!-- row -->
