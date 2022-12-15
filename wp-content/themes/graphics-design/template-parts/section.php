@@ -193,7 +193,137 @@
     </div>
 </section>
 <section id="services">
+    <div class="codepenBG">
+        <div class="container">
+            <div class="desc">
+                <div class="section-title text-center pb-20">
+                    <h3 class="section-header-title wow fadeInUp" data-wow-delay="0.2s">Travaillons ensemble</h3>
+                </div>
+                <div class="text">
+                    <p>
+                        Que vous soyez en train de démarrer une entreprise ou que votre entreprise évolue, je
+                        travaillerai avec vous pour vous aider à créer une marque plus extraordinaire, en clarifiant vos
+                        objectifs, en comprenant vos clients, en élaborant une stratégie, de la conception d’une
+                        identité au développement d’un site vitrine.
+                    </p>
+                </div>
+            </div>
+            <div class="services">
+                <div id="servicesdetails">
+                    <div id="servicesdetailschild" class="invisible">
+                        <div id="microassessment">PCG’s micro-assessment is a first step for organizations that are
+                            seeking to better understand the current state of their data environment and how GDPR’s
+                            impact extends to their processes and business environment. <br>This micro-assessment
+                            process includes;<br><br>- Process discovery and consultation sessions with a PCG GDPR
+                            analyst<br>
+                            - Light data mapping and preparation of a personal information landscape<br>
+                            - A comprehensive report detailing GDPR exposure and GAP analysis for ten proprietary
+                            domains
+                        </div>
+                        <div id="documentreview">With three levels of document review to choose from, PCG can
+                            provide exactly the type of document review and revision your organization requires. Our
+                            team of GDPR specialists can assist in selection and prioritization of important
+                            documents, and deliver a level of service ranging from review and high-level feedback,
+                            to deep-dive review, revision, and supporting facilitation for the adoption of new
+                            practices and policies.
+                        </div>
+                        <div id="macroassessment">The GDPR macro-assessment is a deep-dive analysis into the
+                            processes and environment of an organization and delivers prioritized solutions for
+                            implementation around GDPR compliance and data protection and data privacy.<br><br>While
+                            similar to the micro-assessment, the macro-assessment provides an even deeper evaluation
+                            of systems and processes, and also includes document content GAP analysis, data flow
+                            mapping and diagramming, controller/processor outreach, remediation option analysis, and
+                            an implementation priority roadmap.
+                        </div>
+                        <div id="deliverableservices">PCG deliverable services are a flexible answer for your
+                            artifact/document creation needs. These services provide quick turnaround on
+                            identification, creation, and/or implementation of the items necessary for an effective
+                            data protection environment and GDPR compliance.<br><br>- Data Inventories
+                            - Process Inventories<br>
+                            - Standard Operating Procedures<br>
+                            - Data Governance Operating Model<br>
+                            - Security Framework Development<br>
+                            - GDPR Readiness Dashboard/Roadmap
+                        </div>
+                        <div id="projectexecution">PCG delivers full end-to-end solution implementation for
+                            organizations looking to reach GDPR compliance with a balanced approach to business,
+                            technical, operational, and compliance requirements.<br><br>
+                            Our experienced consultants are project management experts that drive projects to be
+                            within scope, on time, and on budget.
+                        </div>
+                        <div id="dpooutsourcing">Under certain circumstances GDPR mandates organizations appoint a
+                            Data Protection Officer (DPO).
+                            <br><br>Our innovative outsourced DPO program fulfills this requirement and is built
+                            upon 20+ years of experience in data protection and data regulations. Our program helps
+                            companies achieve and maintain GDPR compliance while balancing data protection,
+                            technical and operational costs, business impacts, and innovation.
+                        </div>
 
+
+                    </div>
+                </div>
+                <p id="servicechoicetext"></p>
+                <div class="row" id="column-1">
+                    <div class="row1">
+                        <div class="service" id="servicebox1">
+                            <div class="service-desc">
+                                <p>
+                                    MICRO ASSESSMENT
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service" id="servicebox2">
+                            <div class="service-desc">
+                                <p class="service-txt">
+                                    MACRO ASSESSMENT
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service" id="servicebox3">
+                            <div class="service-desc">
+                                <p class="service-txt">
+                                    DOCUMENT REVIEW
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ServiceInfo">
+
+                        </div>
+                    </div>
+                    <div class="row" id="column-2">
+                        <div class="row2">
+                            <div class="service" id="servicebox4">
+                                <div class="service-desc">
+                                    <p class="service-txt">
+                                        DELIVERABLE-BASED SERVICES
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service" id="servicebox5">
+                                <div class="service-desc">
+
+                                    <p class="service-txt">
+                                        END-TO-END PROJECT EXECUTION
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service" id="servicebox6">
+                                <div class="service-desc">
+                                    <i class="service-icon fas fa-certificate">
+
+                                    </i>
+                                    <p class="service-txt">
+                                        DPO OUTSOURCING
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-fix">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 </section>
 <script>
     /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
