@@ -18,7 +18,7 @@
 }
 
 .codepenBG {
-    height:900px;
+    height: auto;
     margin-top:30px;
 }
 
@@ -46,7 +46,7 @@
 /* start of our services section */
 
 #services {
-    background: #f6f6f6;
+    background: #000;
     min-height: 530px;
     padding-top: 91px;
 }
@@ -74,6 +74,7 @@
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.5;
+    text-align: justify;
 }
 
 /* OUR SERVICES RIGHT SIDE */
@@ -131,6 +132,7 @@
     transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
     left: 300px;
     z-index:2;
+    cursor: pointer;
 }
 
 #services .services .row2expand {
@@ -150,13 +152,14 @@
     justify-content: center;
     align-items: center;
     float: left;
-    width: 120px;
-    height: 120px;
+    width: 108px;
+    height: 108px;
     background: #e72f49;
     transition: all 0.3s ease;
     margin-bottom: 7px;
     margin-left: 85px;
     transform: rotate(45deg);
+    cursor: pointer;
 /*transition: margin-left 0.3s 0.4s;*/
 }
 
@@ -216,7 +219,8 @@
 }
 
 #services .services .row .service .service-desc p {
-    font-size: 10px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 #services .services .row .service .service-desc .service-icon  {
@@ -306,4 +310,8 @@
     display: none;
     height:0px;
     overflow:visible;
+}
+
+#servicesdetailschild > div{
+    color: #fff;
 }

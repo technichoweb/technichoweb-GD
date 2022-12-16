@@ -202,24 +202,25 @@
                         <h3 class="section-header-title wow fadeInUp" data-wow-delay="0.2s">Travaillons ensemble</h3>
                     </div> <!-- row -->
                 </div>
-                <div class="text">
-                    <p>From micro-assessments and compliance remediation reports, to full-scale GDPR compliance project
-                        execution, our GDPR team is ready to help you no matter your need. <span
-                                style="font-size: 8pt; font-style:italic;">Click on any of our service offerings to view more information.</span>
-                    </p>
+                <div class="text  wow fadeInUp" data-wow-delay="0.3s">
+                    <p>Que vous soyez en train de démarrer une entreprise ou que votre entreprise évolue, je
+                        travaillerai avec vous pour vous aider à créer une marque plus extraordinaire, en clarifiant vos
+                        objectifs, en comprenant vos clients, en élaborant une stratégie, de la conception d’une
+                        identité au développement d’un site vitrine.</p>
                 </div>
             </div>
             <div class="services">
                 <div id="servicesdetails">
                     <div id="servicesdetailschild" class="invisibles">
-                        <div id="microassessment">PCG’s micro-assessment is a first step for organizations that are
-                            seeking to better understand the current state of their data environment and how GDPR’s
-                            impact extends to their processes and business environment. <br>This micro-assessment
-                            process includes;<br><br>- Process discovery and consultation sessions with a PCG GDPR
-                            analyst<br>
-                            - Light data mapping and preparation of a personal information landscape<br>
-                            - A comprehensive report detailing GDPR exposure and GAP analysis for ten proprietary
-                            domains
+                        <div id="microassessment">
+                            JE RÉALISE L’ENSEMBLE DE VOS SUPPORTS DE COMMUNICATION
+                            Bien que la tendance soit au digital, les supports de communication imprimés ont encore de
+                            beaux jours devant eux. De la carte de visite à la brochure commerciale, ils participent au
+                            sérieux et au développement de la notoriété de votre entreprise. Je conçois des solutions
+                            originales et stratégiques adaptées à vos objectifs de communication. Je réalise pour vous
+                            des supports uniques, à votre image. Cartes de visite, flyers, affiches, posters, menus,
+                            dépliants, brochures commerciales, Roll up ... autant de supports vous permettant d'affirmer
+                            votre présence.
                         </div>
                         <div id="documentreview">With three levels of document review to choose from, PCG can provide
                             exactly the type of document review and revision your organization requires. Our team of
@@ -245,74 +246,42 @@
                             - Security Framework Development<br>
                             - GDPR Readiness Dashboard/Roadmap
                         </div>
-                        <div id="projectexecution">PCG delivers full end-to-end solution implementation for
-                            organizations looking to reach GDPR compliance with a balanced approach to business,
-                            technical, operational, and compliance requirements.<br><br>
-                            Our experienced consultants are project management experts that drive projects to be within
-                            scope, on time, and on budget.
-                        </div>
-                        <div id="dpooutsourcing">Under certain circumstances GDPR mandates organizations appoint a Data
-                            Protection Officer (DPO).
-                            <br><br>Our innovative outsourced DPO program fulfills this requirement and is built upon
-                            20+ years of experience in data protection and data regulations. Our program helps companies
-                            achieve and maintain GDPR compliance while balancing data protection, technical and
-                            operational costs, business impacts, and innovation.
-                        </div>
+
                     </div>
                 </div>
-                <p id="servicechoicetext">View Services</p>
+                <p id="servicechoicetext"></p>
                 <div class="row" id="column-1">
                     <div class="row1">
                         <div class="service" id="servicebox1">
                             <div class="service-desc">
                                 <p>
-                                    MICRO ASSESSMENT
+                                    PRINT
                                 </p>
                             </div>
                         </div>
                         <div class="service" id="servicebox2">
                             <div class="service-desc">
                                 <p class="service-txt">
-                                    MACRO ASSESSMENT
+                                    IDENTITÉ VISUELLE
                                 </p>
                             </div>
                         </div>
                         <div class="service" id="servicebox3">
                             <div class="service-desc">
                                 <p class="service-txt">
-                                    DOCUMENT REVIEW
+                                    DETOURAGE DE PHOTOS
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service" id="servicebox4">
+                            <div class="service-desc">
+                                <p class="service-txt">
+                                    SITE WEB
                                 </p>
                             </div>
                         </div>
                         <div class="ServiceInfo">
 
-                        </div>
-                    </div>
-                    <div class="row" id="column-2">
-                        <div class="row2">
-                            <div class="service" id="servicebox4">
-                                <div class="service-desc">
-                                    <p class="service-txt">
-                                        DELIVERABLE-BASED SERVICES
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="service" id="servicebox5">
-                                <div class="service-desc">
-                                    <p class="service-txt">
-                                        END-TO-END PROJECT EXECUTION
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="service" id="servicebox6">
-                                <div class="service-desc">
-                                    <p class="service-txt">
-                                        DPO OUTSOURCING
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear-fix">
                         </div>
                     </div>
                 </div>

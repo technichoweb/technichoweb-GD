@@ -6,8 +6,6 @@ jQuery(document).ready(function($){
         document.getElementById('documentreview').style.display = "none";
         document.getElementById('macroassessment').style.display = "none";
         document.getElementById('deliverableservices').style.display = "none";
-        document.getElementById('projectexecution').style.display = "none";
-        document.getElementById('dpooutsourcing').style.display = "none";
     }
 
     $(document).on('click', '.service', function(e) {
@@ -20,7 +18,7 @@ jQuery(document).ready(function($){
             /* Collapse if expanded and same click */
         {
             $("#servicechoicetext").animate({left: '390px', opacity: '0.4'}, "200", servicechoiceblank);
-            function servicechoiceblank(){document.getElementById('servicechoicetext').innerHTML = "View Services";}
+            function servicechoiceblank(){document.getElementById('servicechoicetext').innerHTML = "";}
             $(".row1").toggleClass('row1expand');
             $(".row2").toggleClass('row2expand');
             $(".service").toggleClass('serviceexpand');
@@ -44,23 +42,17 @@ jQuery(document).ready(function($){
 
             function bodytext() {
                 cleartext()
-                if (servicechoicetextvar.trim() === "MICRO ASSESSMENT") {
+                if (servicechoicetextvar.trim() === "PRINT") {
                     document.getElementById('microassessment').style.display = "block";
                 }
-                if (servicechoicetextvar.trim() === "DOCUMENT REVIEW") {
+                if (servicechoicetextvar.trim() === "IDENTITÉ VISUELLE") {
                     document.getElementById('documentreview').style.display = "block";
                 }
-                if (servicechoicetextvar.trim() === "MACRO ASSESSMENT") {
+                if (servicechoicetextvar.trim() === "DETOURAGE DE PHOTOS") {
                     document.getElementById('macroassessment').style.display = "block";
                 }
-                if (servicechoicetextvar.trim() === "DELIVERABLE-BASED SERVICES") {
+                if (servicechoicetextvar.trim() === "SITE WEB") {
                     document.getElementById('deliverableservices').style.display = "block";
-                }
-                if (servicechoicetextvar.trim() === "END-TO-END PROJECT EXECUTION") {
-                    document.getElementById('projectexecution').style.display = "block";
-                }
-                if (servicechoicetextvar.trim() === "DPO OUTSOURCING") {
-                    document.getElementById('dpooutsourcing').style.display = "block";
                 }}
             setTimeout(function(){
                 bodytext();
@@ -89,23 +81,17 @@ jQuery(document).ready(function($){
             $("#servicechoicetext").animate({left: '70px', opacity: '0.9'}, "700");
 
             function bodytext() {
-                if (servicechoicetextvar.trim() === "MICRO ASSESSMENT") {
+                if (servicechoicetextvar.trim() === "PRINT") {
                     document.getElementById('microassessment').style.display = "block";
                 }
-                if (servicechoicetextvar.trim() === "DOCUMENT REVIEW") {
+                if (servicechoicetextvar.trim() === "IDENTITÉ VISUELLE") {
                     document.getElementById('documentreview').style.display = "block";
                 }
-                if (servicechoicetextvar.trim() === "MACRO ASSESSMENT") {
+                if (servicechoicetextvar.trim() === "DETOURAGE DE PHOTOS") {
                     document.getElementById('macroassessment').style.display = "block";
                 }
-                if (servicechoicetextvar.trim() === "DELIVERABLE-BASED SERVICES") {
+                if (servicechoicetextvar.trim() === "SITE WEB") {
                     document.getElementById('deliverableservices').style.display = "block";
-                }
-                if (servicechoicetextvar.trim() === "END-TO-END PROJECT EXECUTION") {
-                    document.getElementById('projectexecution').style.display = "block";
-                }
-                if (servicechoicetextvar.trim() === "DPO OUTSOURCING") {
-                    document.getElementById('dpooutsourcing').style.display = "block";
                 }}
 
             setTimeout(function(){
