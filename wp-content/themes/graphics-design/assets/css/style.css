@@ -2064,7 +2064,8 @@ p {
 .contact-two .contact-title {
     font-size: 18px;
     font-weight: 600;
-    color: #121212
+    color: #121212;
+    line-height: 1.5;
 }
 
 .contact-two .text {
@@ -2202,6 +2203,7 @@ p {
     font-size: 14px !important;
     margin-right: 23%;
     text-align: justify;
+    line-height: 1.5;
 }
 
 .footer-area .footer-widget .footer-link ul li a {

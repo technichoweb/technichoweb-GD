@@ -79,6 +79,19 @@ function custom_post_type() {
         )
     );
 
+    register_post_type( 'gdservices',
+        array(
+            'labels' => array(
+                'name' => __( 'Services' ),
+                'singular_name' => __( 'Service' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'service'),
+        )
+    );
+
+
     register_post_type( 'gdclipping',
         array(
             'labels' => array(

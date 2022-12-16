@@ -212,80 +212,56 @@
             <div class="services">
                 <div id="servicesdetails">
                     <div id="servicesdetailschild" class="invisibles">
-                        <div id="microassessment">
-                            JE RÉALISE L’ENSEMBLE DE VOS SUPPORTS DE COMMUNICATION
-                            Bien que la tendance soit au digital, les supports de communication imprimés ont encore de
-                            beaux jours devant eux. De la carte de visite à la brochure commerciale, ils participent au
-                            sérieux et au développement de la notoriété de votre entreprise. Je conçois des solutions
-                            originales et stratégiques adaptées à vos objectifs de communication. Je réalise pour vous
-                            des supports uniques, à votre image. Cartes de visite, flyers, affiches, posters, menus,
-                            dépliants, brochures commerciales, Roll up ... autant de supports vous permettant d'affirmer
-                            votre présence.
-                        </div>
-                        <div id="documentreview">With three levels of document review to choose from, PCG can provide
-                            exactly the type of document review and revision your organization requires. Our team of
-                            GDPR specialists can assist in selection and prioritization of important documents, and
-                            deliver a level of service ranging from review and high-level feedback, to deep-dive review,
-                            revision, and supporting facilitation for the adoption of new practices and policies.
-                        </div>
-                        <div id="macroassessment">The GDPR macro-assessment is a deep-dive analysis into the processes
-                            and environment of an organization and delivers prioritized solutions for implementation
-                            around GDPR compliance and data protection and data privacy.<br><br>While similar to the
-                            micro-assessment, the macro-assessment provides an even deeper evaluation of systems and
-                            processes, and also includes document content GAP analysis, data flow mapping and
-                            diagramming, controller/processor outreach, remediation option analysis, and an
-                            implementation priority roadmap.
-                        </div>
-                        <div id="deliverableservices">PCG deliverable services are a flexible answer for your
-                            artifact/document creation needs. These services provide quick turnaround on identification,
-                            creation, and/or implementation of the items necessary for an effective data protection
-                            environment and GDPR compliance.<br><br>- Data Inventories
-                            - Process Inventories<br>
-                            - Standard Operating Procedures<br>
-                            - Data Governance Operating Model<br>
-                            - Security Framework Development<br>
-                            - GDPR Readiness Dashboard/Roadmap
-                        </div>
+                        <?php
+                        $args = array(
+                            'post_type' => 'gdservices',
+                            'posts_per_page' => -1
+                        );
 
+                        // Query the posts:
+                        $query = new WP_Query($args);
+                        // Loop through the obituaries:
+                        while ($query->have_posts()) : $query->the_post();
+                        ?>
+
+                        <div id="<?php echo $post->post_name ?>">
+                            <?php the_content(); ?>
+                        </div>
+                        <?php endwhile; ?>
                     </div>
                 </div>
-                <p id="servicechoicetext"></p>
+                <p id="servicechoicetext" class="section-header-title"></p>
                 <div class="row" id="column-1">
                     <div class="row1">
-                        <div class="service" id="servicebox1">
+                        <?php
+                        $args = array(
+                            'post_type' => 'gdservices',
+                            'posts_per_page' => -1
+                        );
+
+                        // Query the posts:
+                        $query = new WP_Query($args);
+                        // Loop through the obituaries:
+                        while ($query->have_posts()) : $query->the_post();
+                        ?>
+                        <div class="service" id="<?php echo $post->ID ?>">
                             <div class="service-desc">
                                 <p>
-                                    PRINT
+                                   <?php the_title() ?>
                                 </p>
                             </div>
                         </div>
-                        <div class="service" id="servicebox2">
-                            <div class="service-desc">
-                                <p class="service-txt">
-                                    IDENTITÉ VISUELLE
-                                </p>
-                            </div>
-                        </div>
-                        <div class="service" id="servicebox3">
-                            <div class="service-desc">
-                                <p class="service-txt">
-                                    DETOURAGE DE PHOTOS
-                                </p>
-                            </div>
-                        </div>
-                        <div class="service" id="servicebox4">
-                            <div class="service-desc">
-                                <p class="service-txt">
-                                    SITE WEB
-                                </p>
-                            </div>
-                        </div>
+                        <?php endwhile;?>
                         <div class="ServiceInfo">
 
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 </section>
+
 </div>
 <!-- partial -->
 <script>

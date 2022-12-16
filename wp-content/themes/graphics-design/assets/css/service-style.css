@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .container {
@@ -263,7 +263,8 @@
     font-size: 14px;
     line-height: 1.5;
     font-family:'Roboto', sans-serif;
-    width: 600px;
+    width: 694px;
+    text-align: justify;
 }
 
 #servicesdetails .invisibles {
@@ -281,22 +282,22 @@
     transition: all 0.5s ease;
 }
 
-#microassessment {
+#print {
     display: none;
     height:0px;
     overflow:visible;
 }
-#documentreview {
+#detourage-photos {
     display: none;
     height:0px;
     overflow:visible;
 }
-#macroassessment {
+#identite-visuelle {
     display: none;
     height:0px;
     overflow:visible;
 }
-#deliverableservices {
+#site-web {
     display: none;
     height:0px;
     overflow:visible;
@@ -314,4 +315,5 @@
 
 #servicesdetailschild > div{
     color: #fff;
+    line-height: 1.5;
 }

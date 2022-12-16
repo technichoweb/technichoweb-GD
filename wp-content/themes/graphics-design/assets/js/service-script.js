@@ -2,10 +2,10 @@ jQuery(document).ready(function($){
 
     function cleartext() {
 
-        document.getElementById('microassessment').style.display = "none";
-        document.getElementById('documentreview').style.display = "none";
-        document.getElementById('macroassessment').style.display = "none";
-        document.getElementById('deliverableservices').style.display = "none";
+        document.getElementById('print').style.display = "none";
+        document.getElementById('identite-visuelle').style.display = "none";
+        document.getElementById('detourage-photos').style.display = "none";
+        document.getElementById('site-web').style.display = "none";
     }
 
     $(document).on('click', '.service', function(e) {
@@ -43,17 +43,18 @@ jQuery(document).ready(function($){
             function bodytext() {
                 cleartext()
                 if (servicechoicetextvar.trim() === "PRINT") {
-                    document.getElementById('microassessment').style.display = "block";
+                    document.getElementById('print').style.display = "block";
                 }
                 if (servicechoicetextvar.trim() === "IDENTITÉ VISUELLE") {
-                    document.getElementById('documentreview').style.display = "block";
+                    document.getElementById('identite-visuelle').style.display = "block";
                 }
-                if (servicechoicetextvar.trim() === "DETOURAGE DE PHOTOS") {
-                    document.getElementById('macroassessment').style.display = "block";
+                if (servicechoicetextvar.trim() === "DÉTOURAGE PHOTOS") {
+                    document.getElementById('detourage-photos').style.display = "block";
                 }
                 if (servicechoicetextvar.trim() === "SITE WEB") {
-                    document.getElementById('deliverableservices').style.display = "block";
-                }}
+                    document.getElementById('site-web').style.display = "block";
+                }
+                }
             setTimeout(function(){
                 bodytext();
             }, 400);
@@ -81,18 +82,20 @@ jQuery(document).ready(function($){
             $("#servicechoicetext").animate({left: '70px', opacity: '0.9'}, "700");
 
             function bodytext() {
+                // cleartext()
                 if (servicechoicetextvar.trim() === "PRINT") {
-                    document.getElementById('microassessment').style.display = "block";
+                    document.getElementById('print').style.display = "block";
                 }
                 if (servicechoicetextvar.trim() === "IDENTITÉ VISUELLE") {
-                    document.getElementById('documentreview').style.display = "block";
+                    document.getElementById('identite-visuelle').style.display = "block";
                 }
-                if (servicechoicetextvar.trim() === "DETOURAGE DE PHOTOS") {
-                    document.getElementById('macroassessment').style.display = "block";
+                if (servicechoicetextvar.trim() === "DÉTOURAGE PHOTOS") {
+                    document.getElementById('detourage-photos').style.display = "block";
                 }
                 if (servicechoicetextvar.trim() === "SITE WEB") {
-                    document.getElementById('deliverableservices').style.display = "block";
-                }}
+                    document.getElementById('site-web').style.display = "block";
+                }
+            }
 
             setTimeout(function(){
                 bodytext();
