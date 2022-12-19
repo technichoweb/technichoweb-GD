@@ -11,11 +11,6 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 
-.container {
-    max-width: 1170px;
-    margin: auto;
-    padding-left: 45px;
-}
 
 .codepenBG {
     height: auto;
@@ -82,8 +77,8 @@
 #services .services {
     width: 67%;
     float: left;
-    height:500px;
-    top: 7px;
+    height: 500px;
+    top: 60px;
     position: relative;
 }
 
@@ -99,9 +94,9 @@
 
 #services .services .row1 {
     position: relative;
-    top:0px;
+    top:50px;
     transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
-    left: 0px;
+    left: 110px;
 }
 
 #services .services .row2 {
@@ -130,9 +125,9 @@
     position: relative;
     top: -93px;
     transition: transform 0.3s ease, left 0.3s 0.4s, top 0.4s 0.7s ease;
-    left: 300px;
+    left: 250px;
     z-index:2;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 #services .services .row2expand {
@@ -168,8 +163,8 @@
     justify-content: center;
     align-items: center;
     float: left;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     transition: all 0.3s ease;
     margin-bottom: 7px;
     margin-left: 0px;
@@ -182,8 +177,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     background: #28282e;
     transition: all 0.3s ease;
     margin-bottom: 7px;
@@ -262,8 +257,8 @@
     position: relative;
     font-size: 14px;
     line-height: 1.5;
-    font-family:'Roboto', sans-serif;
-    width: 694px;
+    font-family:'Source Sans Pro', sans-serif;
+    width: 133%;
     text-align: justify;
 }
 
@@ -278,8 +273,9 @@
 #servicesdetails .visible {
     opacity:.9;
     position:relative;
-    top: 85px;
+    top: 111px;
     transition: all 0.5s ease;
+    /*left: 24%;*/
 }
 
 #print {

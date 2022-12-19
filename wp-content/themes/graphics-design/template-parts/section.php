@@ -194,71 +194,72 @@
 </section><!-- partial:index.partial.html -->
 <section id="services">
     <div class="codepenBG">
-
-        <div class="container">
-            <div class="desc">
-                <div class="heading">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
                     <div class="section-title text-center pb-20">
-                        <h3 class="section-header-title wow fadeInUp" data-wow-delay="0.2s">Travaillons ensemble</h3>
+                        <h3 class="title section-header-title wow fadeInUp" data-wow-delay="0.2s">Travaillons ensemble</h3>
+                        <p class="text wow fadeInUp" data-wow-delay="0.2s">Que vous soyez en train de démarrer une entreprise ou que votre entreprise évolue, je
+                            travaillerai avec vous pour vous aider à créer une marque plus extraordinaire, en clarifiant vos
+                            objectifs, en comprenant vos clients, en élaborant une stratégie, de la conception d’une
+                            identité au développement d’un site vitrine </p>
                     </div> <!-- row -->
                 </div>
-                <div class="text  wow fadeInUp" data-wow-delay="0.3s">
-                    <p>Que vous soyez en train de démarrer une entreprise ou que votre entreprise évolue, je
-                        travaillerai avec vous pour vous aider à créer une marque plus extraordinaire, en clarifiant vos
-                        objectifs, en comprenant vos clients, en élaborant une stratégie, de la conception d’une
-                        identité au développement d’un site vitrine.</p>
-                </div>
-            </div>
-            <div class="services">
-                <div id="servicesdetails">
-                    <div id="servicesdetailschild" class="invisibles">
-                        <?php
-                        $args = array(
-                            'post_type' => 'gdservices',
-                            'posts_per_page' => -1
-                        );
+                <div class="container">
+                    <div class="services">
+                        <div id="servicesdetails">
+                            <div id="servicesdetailschild" class="invisibles">
+                                <?php
+                                $args = array(
+                                    'post_type' => 'gdservices',
+                                    'posts_per_page' => -1
+                                );
 
-                        // Query the posts:
-                        $query = new WP_Query($args);
-                        // Loop through the obituaries:
-                        while ($query->have_posts()) : $query->the_post();
-                        ?>
+                                // Query the posts:
+                                $query = new WP_Query($args);
+                                // Loop through the obituaries:
+                                while ($query->have_posts()) : $query->the_post();
+                                    ?>
 
-                        <div id="<?php echo $post->post_name ?>">
-                            <?php the_content(); ?>
-                        </div>
-                        <?php endwhile; ?>
-                    </div>
-                </div>
-                <p id="servicechoicetext" class="section-header-title"></p>
-                <div class="row" id="column-1">
-                    <div class="row1">
-                        <?php
-                        $args = array(
-                            'post_type' => 'gdservices',
-                            'posts_per_page' => -1
-                        );
-
-                        // Query the posts:
-                        $query = new WP_Query($args);
-                        // Loop through the obituaries:
-                        while ($query->have_posts()) : $query->the_post();
-                        ?>
-                        <div class="service" id="<?php echo $post->ID ?>">
-                            <div class="service-desc">
-                                <p>
-                                   <?php the_title() ?>
-                                </p>
+                                    <div id="<?php echo $post->post_name ?>">
+                                        <?php the_content(); ?>
+                                    </div>
+                                <?php endwhile; ?>
                             </div>
                         </div>
-                        <?php endwhile;?>
-                        <div class="ServiceInfo">
+                        <p id="servicechoicetext" class="section-header-title"></p>
+                        <div class="row" id="column-1">
+                            <div class="row1">
+                                <?php
+                                $args = array(
+                                    'post_type' => 'gdservices',
+                                    'posts_per_page' => -1
+                                );
 
+                                // Query the posts:
+                                $query = new WP_Query($args);
+                                // Loop through the obituaries:
+                                while ($query->have_posts()) : $query->the_post();
+                                    ?>
+                                    <div class="service" id="<?php echo $post->ID ?>">
+                                        <div class="service-desc">
+                                            <p>
+                                                <?php the_title() ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                <?php endwhile;?>
+                                <div class="ServiceInfo">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> <!-- row -->
+
         </div>
+
     </div>
 </section>
 

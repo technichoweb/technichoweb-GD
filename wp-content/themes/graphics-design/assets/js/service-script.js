@@ -8,6 +8,12 @@ jQuery(document).ready(function($){
         document.getElementById('site-web').style.display = "none";
     }
 
+    let event = 'mouseenter';
+    $(document).on('mouseenter', '.service', function(e) {
+        if (!$(this).hasClass('selectedservice')) {
+            event = 'click'
+        }
+    })
     $(document).on('click', '.service', function(e) {
         var that = $(this);
         var x = that.attr('id');
@@ -17,10 +23,10 @@ jQuery(document).ready(function($){
 
             /* Collapse if expanded and same click */
         {
-            $("#servicechoicetext").animate({left: '390px', opacity: '0.4'}, "200", servicechoiceblank);
+            $("#servicechoicetext").animate({left: '390px', opacity: '0.4'}, "400", servicechoiceblank);
             function servicechoiceblank(){document.getElementById('servicechoicetext').innerHTML = "";}
             $(".row1").toggleClass('row1expand');
-            $(".row2").toggleClass('row2expand');
+            // $(".row2").toggleClass('row2expand');
             $(".service").toggleClass('serviceexpand');
             $(this).toggleClass('selectedservice');
             $('#servicesdetailschild').removeClass('visible');
@@ -68,7 +74,7 @@ jQuery(document).ready(function($){
                 }
 
                 $("#servicechoicetext").animate({left: '350px', opacity: '0.9'}, "400", servicechoicechange);
-                $("#servicechoicetext").animate({left: '70px', opacity: '0.9'}, "700");
+                // $("#servicechoicetext").animate({left: '70px', opacity: '0.9'}, "700");
             }
         }
         /*First expansion? */
@@ -78,8 +84,8 @@ jQuery(document).ready(function($){
             $(".service").toggleClass('serviceexpand');
             $(this).toggleClass('selectedservice');
             var servicechoicetextvar = $(this).find("p").text();
-            document.getElementById('servicechoicetext').innerHTML = servicechoicetextvar;
-            $("#servicechoicetext").animate({left: '70px', opacity: '0.9'}, "700");
+            // document.getElementById('servicechoicetext').innerHTML = servicechoicetextvar;
+            // $("#servicechoicetext").animate({left: '70px', opacity: '0.9'}, "700");
 
             function bodytext() {
                 // cleartext()
