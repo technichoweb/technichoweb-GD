@@ -208,64 +208,35 @@
 
                 <div class="container">
                     <div class="row pb-100">
+                        <?php
+                        $args = array(
+                            'post_type' => 'gdservices',
+                            'posts_per_page' => -1
+                        );
+
+                        // Query the posts:
+                        $query = new WP_Query($args);
+                        // Loop through the obituaries:
+                        while ($query->have_posts()) : $query->the_post();
+                        ?>
                         <div class="col">
                             <div class="card-service">
                                 <div class="content-card">
                                     <div class="front">
-                                        <h3>SITE WEB</h3>
+                                        <h3><?= the_title() ?></h3>
                                     </div>
-                                    <div class="back from-right">
+                                    <div class="back from-<?php if ($post->ID % 2 == 0): ?>right<?php else: ?>left<?php endif; ?>">
                                         <p class="des">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                                            <?php the_content() ?>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card-service">
-                                <div class="content-card">
-                                    <div class="front">
-                                        <h3>PRINT</h3>
-                                    </div>
-                                    <div class="back from-right">
-                                        <p class="des">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-100"></div>
-                        <br>
-                        <div class="col">
-                            <div class="card-service">
-                                <div class="content-card">
-                                    <div class="front">
-                                        <h3>SITE WEB</h3>
-                                    </div>
-                                    <div class="back from-right">
-                                        <p class="des">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card-service">
-                                <div class="content-card">
-                                    <div class="front">
-                                        <h3>PRINT</h3>
-                                    </div>
-                                    <div class="back from-right">
-                                        <p class="des">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <?php if ($post->ID % 2 == 0): ?>
+                                <div class="w-100 pb-4"></div>
+                            <?php endif; ?>
+                        <?php endwhile; ?>
                     </div>
                 </div>
             </div> <!-- row -->
@@ -292,12 +263,12 @@
             }
             /* Style the counter cards */
             .card-service {
-                padding: 5px;
+                padding: 1px;
                 text-align: center;
                 background-color: #e72f49;
                 /* border-radius: 10px; */
                 cursor: pointer;
-                width: 80%;
+                width: 100%;
                 height: 400px;
             }
             .card-service .profile{
@@ -320,11 +291,12 @@
                 position:absolute;
                 width:100%;
                 height:100%;
-                background: rgba(0,0,0,0.8);
+                background: rgba(0,0,0,0.9);
                 transition:1s;
 
                 z-index:1;
                 padding:10px;
+                text-align: justify;
             }
 
             .from-left{
