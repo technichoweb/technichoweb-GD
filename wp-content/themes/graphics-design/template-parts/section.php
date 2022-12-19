@@ -205,52 +205,64 @@
                             identité au développement d’un site vitrine </p>
                     </div> <!-- row -->
                 </div>
+
                 <div class="container">
-                    <div class="services">
-                        <div id="servicesdetails">
-                            <div id="servicesdetailschild" class="invisibles">
-                                <?php
-                                $args = array(
-                                    'post_type' => 'gdservices',
-                                    'posts_per_page' => -1
-                                );
-
-                                // Query the posts:
-                                $query = new WP_Query($args);
-                                // Loop through the obituaries:
-                                while ($query->have_posts()) : $query->the_post();
-                                    ?>
-
-                                    <div id="<?php echo $post->post_name ?>">
-                                        <?php the_content(); ?>
+                    <div class="row pb-100">
+                        <div class="col">
+                            <div class="card-service">
+                                <div class="content-card">
+                                    <div class="front">
+                                        <h3>SITE WEB</h3>
                                     </div>
-                                <?php endwhile; ?>
+                                    <div class="back from-right">
+                                        <p class="des">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <p id="servicechoicetext" class="section-header-title"></p>
-                        <div class="row" id="column-1">
-                            <div class="row1">
-                                <?php
-                                $args = array(
-                                    'post_type' => 'gdservices',
-                                    'posts_per_page' => -1
-                                );
-
-                                // Query the posts:
-                                $query = new WP_Query($args);
-                                // Loop through the obituaries:
-                                while ($query->have_posts()) : $query->the_post();
-                                    ?>
-                                    <div class="service" id="<?php echo $post->ID ?>">
-                                        <div class="service-desc">
-                                            <p>
-                                                <?php the_title() ?>
-                                            </p>
-                                        </div>
+                        <div class="col">
+                            <div class="card-service">
+                                <div class="content-card">
+                                    <div class="front">
+                                        <h3>PRINT</h3>
                                     </div>
-                                <?php endwhile;?>
-                                <div class="ServiceInfo">
-
+                                    <div class="back from-right">
+                                        <p class="des">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <br>
+                        <div class="col">
+                            <div class="card-service">
+                                <div class="content-card">
+                                    <div class="front">
+                                        <h3>SITE WEB</h3>
+                                    </div>
+                                    <div class="back from-right">
+                                        <p class="des">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card-service">
+                                <div class="content-card">
+                                    <div class="front">
+                                        <h3>PRINT</h3>
+                                    </div>
+                                    <div class="back from-right">
+                                        <p class="des">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, in animi doloribus reprehenderit debitis voluptas pariatur eaque! Rem, accusamus tempora?
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +271,120 @@
             </div> <!-- row -->
 
         </div>
+        <style>
+            /* Responsive columns */
+            @media screen and (max-width: 700px) {
 
+                .container{
+                    width: 100%;
+                }
+
+                .column {
+                    width: 100%;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .front h3 {
+                color: #fff !important;
+                padding-top:  170px;
+            }
+            /* Style the counter cards */
+            .card-service {
+                padding: 5px;
+                text-align: center;
+                background-color: #e72f49;
+                /* border-radius: 10px; */
+                cursor: pointer;
+                width: 80%;
+                height: 400px;
+            }
+            .card-service .profile{
+                border-radius:10px;
+                transition: 0.2s;
+            }
+            .card-service:hover .profile{
+                transform:scale(1.4);
+                border-top-right-radius:50px;
+                border-top-left-radius:50px;
+            }
+
+            .card-service .content-card{
+                width:100%;
+                height:100%;
+                position:relative;
+                overflow:hidden;
+            }
+            .card-service .content-card .back{
+                position:absolute;
+                width:100%;
+                height:100%;
+                background: rgba(0,0,0,0.8);
+                transition:1s;
+
+                z-index:1;
+                padding:10px;
+            }
+
+            .from-left{
+                top:0;
+                left:-100%;
+            }
+            .card-service:hover .content-card .from-left {
+                left:0%;
+            }
+
+            .from-bottom{
+                top:100%;
+                left:0;
+            }
+            .card-service:hover .content-card .from-bottom {
+                top:0%;
+            }
+
+            .from-right{
+                top:0%;
+                right:-100%;
+            }
+            .card-service:hover .content-card .from-right {
+                right:0;
+            }
+
+            .card-service .content-card .back h3{
+                font-size:15px;
+                letter-spacing:2px;
+            }
+            .card-service .content-card .back .tem-img{
+                border-radius:100%;
+            }
+
+            .card-service .content-card .back .des{
+                font-size:13px;
+                padding:20px 0px;
+            }
+            .card-service .content-card .back .social-icon{
+                list-style:none;
+                margin:0px;
+                padding:0px;
+            }
+            .card-service .content-card .back .social-icon li{
+                display:inline-block;
+            }
+
+            .card-service .content-card .back .social-icon li a{
+                display:block;
+                background:#333;
+                color:#e72f49;
+                width:40px;
+                height:40px;
+                text-align:center;
+                line-height:40px;
+                border-radius:100%;
+            }
+
+
+        </style>
     </div>
 </section>
 
