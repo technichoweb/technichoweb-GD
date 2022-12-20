@@ -6,13 +6,12 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
                     <div class="footer-link">
+                        <?php if (get_option('tw_about') != "" and $textAbout = get_option('tw_about')): ?>
                         <h6 class="footer-title">A propos</h6>
-                        <p> Plus de 6 ans d’expérience en agence et en freelance m’ont permis d’acquérir
-                            la créativité et la méthodologie nécessaires au bon déroulement d’un projet. Directeur
-                            artistique et graphiste spécialisée dans la création d’identité visuelle, j’assure la
-                            conception, la création et la réalisation de vos projets graphiques. Je mets en forme votre
-                            message grâce à un éventail de compétences dans la conception de supports de communication.
+                        <p>
+                            <?= $textAbout; ?>
                         </p>
+                        <?php endif; ?>
                         <div class="realisation">
                             Mes pages
                         </div>
