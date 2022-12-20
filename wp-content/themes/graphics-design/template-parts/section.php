@@ -307,12 +307,22 @@
                 left:0%;
             }
 
-            .back {
+            @keyframes animatezoom {
+                from {
+                    transform: scale(0)
+                }
+                to {
+                    transform: scale(1)
+                }
+            }
+
+            .back p {
                 opacity: 0;
             }
-            .back:hover  {
+            .back:hover p {
                 opacity: 1;
-                transition: 3s;
+                transition: 6s;
+                animation:animatezoom 1s
             }
 
             .from-bottom{
