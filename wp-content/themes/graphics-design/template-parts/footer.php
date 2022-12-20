@@ -14,7 +14,7 @@
                             message grâce à un éventail de compétences dans la conception de supports de communication.
                         </p>
                         <div class="realisation">
-                            Mes réalisations
+                            Mes pages
                         </div>
                         <div class="social-network">
                             <span><a href="<?php echo get_option('tw_facebook_url'); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/linkedin-logo.png' ?>" alt=""></a></span>
