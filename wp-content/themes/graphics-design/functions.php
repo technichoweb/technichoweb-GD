@@ -103,6 +103,18 @@ function custom_post_type() {
         )
     );
 
+    register_post_type( 'gdcounter',
+        array(
+            'labels' => array(
+                'name' => __( 'Compteur' ),
+                'singular_name' => __( 'Compteur' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'counter'),
+        )
+    );
+
     $labels = array(
         'name'              => _x( 'Gallery', 'taxonomy general name' ),
         'singular_name'     => _x( 'Galleries', 'taxonomy singular name' ),

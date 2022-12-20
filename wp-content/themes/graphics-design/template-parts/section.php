@@ -507,46 +507,27 @@
         <div class="row justify-content-between">
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="row">
+                    <?php
+                    $args = array(
+                        'post_type' => 'gdcounter',
+                        'posts_per_page' => 4
+                    );
+
+                    // Query the posts:
+                    $query = new WP_Query($args);
+                    // Loop through the obituaries:
+                    while ($query->have_posts()) : $query->the_post();
+                    ?>
                     <!-- Start counter -->
                     <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="counter-box wow fadeInUp" data-wow-delay="0.4s">
                             <div class="fact-count">
-                                <h3><span class="counter">41</span></h3>
-                                <p>Logos</p>
+                                <h3><span class="counter"><?php echo get_field('counter') ?></span></h3>
+                                <p><?php the_title() ?></p>
                             </div>
                         </div>
                     </div>
-                    <!-- End counter -->
-                    <!-- Start counter -->
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="counter-box wow fadeInUp" data-wow-delay="0.6s">
-                            <div class="fact-count">
-                                <h3><span class="counter">123</span></h3>
-                                <p>Carte de visite</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End counter -->
-                    <!-- Start counter -->
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="counter-box wow fadeInUp" data-wow-delay="0.8s">
-                            <div class="fact-count">
-                                <h3><span class="counter">395</span></h3>
-                                <p>Affiches</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End counter -->
-                    <!-- Start counter -->
-                    <div class="col-lg-3 col-md-6 col-xs-12">
-                        <div class="counter-box wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="fact-count">
-                                <h3><span class="counter">68</span></h3>
-                                <p>Brochures</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End counter -->
+                    <?php endwhile; ?>
                 </div>
             </div>
         </div>
