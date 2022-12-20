@@ -312,7 +312,7 @@
             }
             .back:hover  {
                 opacity: 1;
-                transition: 4s;
+                transition: 3s;
             }
 
             .from-bottom{
