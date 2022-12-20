@@ -307,6 +307,14 @@
                 left:0%;
             }
 
+            .back {
+                opacity: 0;
+            }
+            .back:hover  {
+                opacity: 1;
+                transition: 4s;
+            }
+
             .from-bottom{
                 top:100%;
                 left:0;
