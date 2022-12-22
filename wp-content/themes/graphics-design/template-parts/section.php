@@ -218,12 +218,14 @@
                         $query = new WP_Query($args);
                         // Loop through the obituaries:
                         while ($query->have_posts()) : $query->the_post();
+                        $pictoIcon = get_field('picto');
                         ?>
                         <div class="col">
                             <div class="card-service">
                                 <div class="content-card">
                                     <div class="front">
                                         <h3><?= the_title() ?></h3>
+                                        <p><?php echo $pictoIcon ?></p>
                                     </div>
                                     <div class="back from-<?php if ($post->ID % 2 == 0): ?>right<?php else: ?>left<?php endif; ?>">
                                         <p class="des">
@@ -259,7 +261,7 @@
 
             .front h3 {
                 color: #fff !important;
-                padding-top:  170px;
+                padding-top:  148px;
             }
             /* Style the counter cards */
             .card-service {
