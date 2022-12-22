@@ -87,9 +87,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="section-title text-center pb-20">
-                    <h3 class="title section-header-title wow fadeInUp" data-wow-delay="0.2s">Portfolio</h3>
-                    <p class="text section-text wow fadeInUp" data-wow-delay="0.2s">Je vous accompagne dans la création
-                        de votre identité visuel <br> avec professionnalisme et simplicité </p>
+                    <h3 class="title section-header-title wow fadeInUp" data-wow-delay="0.2s"><?php echo get_option('tw_title_portfolio') ?></h3>
+                    <p class="text section-text wow fadeInUp" data-wow-delay="0.2s"><?php echo get_option('tw_portfolio') ?></p>
                 </div> <!-- row -->
             </div>
         </div> <!-- row -->
@@ -198,11 +197,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-20">
-                        <h3 class="title section-header-title wow fadeInUp" data-wow-delay="0.2s">Travaillons ensemble</h3>
-                        <p class="text wow fadeInUp" data-wow-delay="0.2s">Que vous soyez en train de démarrer une entreprise ou que votre entreprise évolue, je
-                            travaillerai avec vous pour vous aider à créer une marque plus extraordinaire, en clarifiant vos
-                            objectifs, en comprenant vos clients, en élaborant une stratégie, de la conception d’une
-                            identité au développement d’un site vitrine </p>
+                        <h3 class="title section-header-title wow fadeInUp" data-wow-delay="0.2s"><?php echo get_option('tw_title_service') ?></h3>
+                        <p class="text wow fadeInUp" data-wow-delay="0.2s"><?php echo get_option('tw_service') ?></p>
                     </div> <!-- row -->
                 </div>
 
@@ -254,17 +250,15 @@
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="section-title text-center pb-20">
-                    <h3 class="title contact-header-title">Je suis disponible pour un travail indépendant.</h3>
-                    <p class="text">Écrivez-moi si vous avez envie de discuter.</p>
+                    <h3 class="title contact-header-title"><?php echo get_option('tw_title_contact') ?></h3>
+                    <p class="text"><?php echo get_option('tw_contact') ?></p>
                 </div> <!-- section title -->
             </div>
         </div> <!-- row -->
         <div class="row">
             <div class="col-lg-6">
                 <div class="contact-two mt-50 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                    <h4 class="contact-title">L’identité visuelle d’une société fait partie intégrante
-                        de la stratégie de communication. Véritable carte d’identité
-                        graphique, elle véhicule l’image de votre entreprise.</h4>
+                    <h4 class="contact-title"><?php echo get_option('tw_seconde_contact') ?></h4>
                     <p class="text">Positionnement, couleurs, typographie , déclinaison , etc ...</p>
                     <ul class="contact-info">
                         <li><i class="lni-money-location"></i> Créa-Graphic Design</li>

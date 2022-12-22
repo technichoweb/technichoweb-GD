@@ -206,7 +206,7 @@ function my_cool_plugin_create_menu() {
 
 function register_tw_plugin_settings() {
     //register our settings
-    $inputNames = ['tw_phone','tw_email','tw_about','tw_header_title','tw_skype_url','tw_typewriter_text','tw_address','tw_website','tw_facebook_url','tw_linkedin_url'];
+    $inputNames = ['tw_phone','tw_email','tw_portfolio','tw_title_portfolio','tw_title_contact','tw_contact','tw_seconde_contact','tw_service','tw_title_service','tw_about','tw_header_title','tw_skype_url','tw_typewriter_text','tw_address','tw_website','tw_facebook_url','tw_linkedin_url'];
     foreach ($inputNames as $inputName){
         register_setting( 'tw_plugin-settings-group', $inputName);
     }
@@ -276,6 +276,37 @@ function tw_plugin_settings_page() {
                 <tr valign="top">
                     <th scope="row">Apropos</th>
                     <td><textarea name="tw_about" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_about') ); ?></textarea></td>
+                </tr>
+                <hr>
+                <tr valign="top">
+                    <th scope="row">Titre section Service </th>
+                    <td><input type="text" name="tw_title_service" value="<?php echo esc_attr( get_option('tw_title_service') ); ?>"></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Description section Service</th>
+                    <td><textarea name="tw_service" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_service') ); ?></textarea></td>
+                </tr>
+                <hr>
+                <tr valign="top">
+                    <th scope="row">Titre section portfolio </th>
+                    <td><input type="text" name="tw_title_portfolio" value="<?php echo esc_attr( get_option('tw_title_portfolio') ); ?>"></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Description section portfolio</th>
+                    <td><textarea name="tw_portfolio" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_portfolio') ); ?></textarea></td>
+                </tr>
+                <hr>
+                <tr valign="top">
+                    <th scope="row">Titre section contact </th>
+                    <td><input type="text" name="tw_title_contact" value="<?php echo esc_attr( get_option('tw_title_contact') ); ?>"></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Description section contact</th>
+                    <td><textarea name="tw_contact" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_contact') ); ?></textarea></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Seconde Description section contact</th>
+                    <td><textarea name="tw_seconde_contact" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_seconde_contact') ); ?></textarea></td>
                 </tr>
             </table>
             <?php submit_button(); ?>
