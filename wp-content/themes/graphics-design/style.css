@@ -1133,10 +1133,4 @@ logo loader
     transform: translatey(0px);
     animation: float 1s ease-in-out infinite;
 }
-img { width: 100%; height: auto; }
-
-
-img {
-    width: 100%;
-    height: auto;
-}
+.waiting-logo img { width: 100%; height: auto; }
