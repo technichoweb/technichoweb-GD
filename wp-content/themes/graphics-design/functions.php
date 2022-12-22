@@ -273,10 +273,6 @@ function tw_plugin_settings_page() {
                     <td><input type="url" name="tw_linkedin_url" value="<?php echo esc_attr( get_option('tw_linkedin_url') ); ?>" /></td>
                 </tr>
                 <tr valign="top">
-                    <th scope="row">Apropos</th>
-                    <td><textarea name="tw_about" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_about') ); ?></textarea></td>
-                </tr>
-                <tr valign="top">
                     <th scope="row">Titre section Service </th>
                     <td><input type="text" name="tw_title_service" value="<?php echo esc_attr( get_option('tw_title_service') ); ?>"></td>
                 </tr>
@@ -304,6 +300,10 @@ function tw_plugin_settings_page() {
                     <th scope="row">Seconde Description section contact</th>
                     <td><textarea name="tw_seconde_contact" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_seconde_contact') ); ?></textarea></td>
                 </tr>
+                <tr valign="top">
+                    <th scope="row">Apropos</th>
+                    <td><textarea name="tw_about" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_about') ); ?></textarea></td>
+                </tr>
             </table>
             <?php submit_button(); ?>
         </form>
@@ -314,3 +314,12 @@ function add_cors_http_header(){
     header("Access-Control-Allow-Origin: *");
 }
 add_action('init','add_cors_http_header');
+
+add_action('init', 'remove_content_editor');
+/**
+ * removing content editor on specific post_type
+ */
+function remove_content_editor() {
+    remove_post_type_support( 'gdcounter', 'editor' );
+    remove_post_type_support( 'gdclipping', 'editor' );
+}
