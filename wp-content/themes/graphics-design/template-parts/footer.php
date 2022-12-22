@@ -16,8 +16,8 @@
                             Mes pages
                         </div>
                         <div class="social-network">
-                            <span><a href="<?php echo get_option('tw_facebook_url'); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/linkedin-logo.png' ?>" alt=""></a></span>
-                            <span><a href="<?php echo get_option('tw_linkedin_url'); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/facebook-logo.png' ?>" alt=""></a></span>
+                            <span><a target="_blank" href="<?php echo get_option('tw_facebook_url'); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/linkedin-logo.png' ?>" alt=""></a></span>
+                            <span><a target="_blank" href="<?php echo get_option('tw_linkedin_url'); ?>"><img src="<?php echo get_template_directory_uri().'/assets/images/facebook-logo.png' ?>" alt=""></a></span>
                         </div>
                     </div> <!-- footer link -->
                 </div>
@@ -26,27 +26,27 @@
                         <h6 class="footer-title">Contact</h6>
                         <ul>
                             <?php if (get_option('tw_facebook_url') !== "" && $websiteUrl = get_option('tw_facebook_url')): ?>
-                                <li><a href="<?php echo get_option('tw_facebook_url') ?>"><i
+                                <li><a target="_blank" href="<?php echo get_option('tw_facebook_url') ?>"><i
                                                 class="lni lni-facebook-filled"></i> Alexandre M.</a>
                                 </li>
                             <?php endif; ?>
-                            <li><a href="#"><i class="lni lni-display"></i> Studio de création visuel</a></li>
+                            <li><a target="_blank" href="#"><i class="lni lni-display"></i> Studio de création visuel</a></li>
                             <?php if (get_option('tw_phone') !== "" && $phoneNumber = get_option('tw_phone')): ?>
-                                <li><a href="<?= $phoneNumber ?>"><i class="lni lni-phone"></i>
+                                <li><a target="_blank" href="<?= $phoneNumber ?>"><i class="lni lni-phone"></i>
                                         <?php echo get_option('tw_phone') ?></a></li>
                             <?php endif; ?>
                             <?php if (get_option('tw_email') !== "" && $emailAddress = get_option('tw_email')): ?>
-                                <li><a href="<?php echo get_option('tw_email') ?>"><i
+                                <li><a target="_blank" href="<?php echo get_option('tw_email') ?>"><i
                                                 class="lni lni-envelope"></i> <?php echo get_option('tw_email') ?></a>
                                 </li>
                             <?php endif; ?>
                             <?php if (get_option('tw_website') !== "" && $websiteUrl = get_option('tw_website')): ?>
-                                <li><a href="<?php echo get_option('tw_website') ?>"><i
+                                <li><a target="_blank" href="<?php echo get_option('tw_website') ?>"><i
                                                 class="lni lni-world"></i> <?php echo get_option('tw_website') ?></a>
                                 </li>
                             <?php endif; ?>
                             <?php if (get_option('tw_skype_url') !== "" && $websiteUrl = get_option('tw_skype_url')): ?>
-                                <li><a href="<?php echo get_option('tw_skype_url') ?>"><i
+                                <li><a target="_blank" href="<?php echo get_option('tw_skype_url') ?>"><i
                                                 class="lni lni-skype"></i> <?php echo get_option('tw_skype_url') ?></a>
                                 </li>
                             <?php endif; ?>
@@ -100,10 +100,10 @@
                 </div>
               <!--  <div class="col-lg-5">
                     <ul class="social text-center text-lg-right mt-10">
-                        <li><a href="https://facebook.com/uideckHQ"><i class="lni-facebook-filled"></i></a></li>
-                        <li><a href="https://twitter.com/uideckHQ"><i class="lni-twitter-original"></i></a></li>
-                        <li><a href="https://instagram.com/uideckHQ"><i class="lni-instagram-original"></i></a></li>
-                        <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                        <li><a target="_blank" href="https://facebook.com/uideckHQ"><i class="lni-facebook-filled"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/uideckHQ"><i class="lni-twitter-original"></i></a></li>
+                        <li><a target="_blank" href="https://instagram.com/uideckHQ"><i class="lni-instagram-original"></i></a></li>
+                        <li><a target="_blank" href="#"><i class="lni-linkedin-original"></i></a></li>
                     </ul>
                 </div>-->
             </div>
