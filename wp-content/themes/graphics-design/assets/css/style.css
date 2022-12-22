@@ -132,12 +132,11 @@ p {
 
 .preloader .loader .ytp-spinner {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 64px;
-    margin-left: -32px;
+    left: 46%;
+    top: 41%;
+    width: 67px;
     z-index: 18;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .preloader .loader .ytp-spinner .ytp-spinner-container {

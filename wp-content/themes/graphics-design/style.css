@@ -1105,3 +1105,38 @@ style service
     line-height:40px;
     border-radius:100%;
 }
+
+/**
+logo loader
+ */
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.9);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(1px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.9);
+        transform: translatey(0px);
+    }
+}
+.waiting-logo {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 300px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 1s ease-in-out infinite;
+}
+img { width: 100%; height: auto; }
+
+
+img {
+    width: 100%;
+    height: auto;
+}

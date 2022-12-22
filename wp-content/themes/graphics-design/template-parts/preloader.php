@@ -2,15 +2,8 @@
 <div class="preloader">
     <div class="loader">
         <div class="ytp-spinner">
-            <div class="ytp-spinner-container">
-                <div class="ytp-spinner-rotator">
-                    <div class="ytp-spinner-left">
-                        <div class="ytp-spinner-circle"></div>
-                    </div>
-                    <div class="ytp-spinner-right">
-                        <div class="ytp-spinner-circle"></div>
-                    </div>
-                </div>
+            <div class="waiting-logo">
+                <img src="<?php echo get_template_directory_uri()."/assets/images/logowithcolor.PNG"; ?>" alt="waiting" />
             </div>
         </div>
     </div>
