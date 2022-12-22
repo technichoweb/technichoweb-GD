@@ -272,12 +272,10 @@ function tw_plugin_settings_page() {
                     <th scope="row">URL Linkedin</th>
                     <td><input type="url" name="tw_linkedin_url" value="<?php echo esc_attr( get_option('tw_linkedin_url') ); ?>" /></td>
                 </tr>
-                <hr>
                 <tr valign="top">
                     <th scope="row">Apropos</th>
                     <td><textarea name="tw_about" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_about') ); ?></textarea></td>
                 </tr>
-                <hr>
                 <tr valign="top">
                     <th scope="row">Titre section Service </th>
                     <td><input type="text" name="tw_title_service" value="<?php echo esc_attr( get_option('tw_title_service') ); ?>"></td>
@@ -286,7 +284,6 @@ function tw_plugin_settings_page() {
                     <th scope="row">Description section Service</th>
                     <td><textarea name="tw_service" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_service') ); ?></textarea></td>
                 </tr>
-                <hr>
                 <tr valign="top">
                     <th scope="row">Titre section portfolio </th>
                     <td><input type="text" name="tw_title_portfolio" value="<?php echo esc_attr( get_option('tw_title_portfolio') ); ?>"></td>
@@ -295,7 +292,6 @@ function tw_plugin_settings_page() {
                     <th scope="row">Description section portfolio</th>
                     <td><textarea name="tw_portfolio" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_portfolio') ); ?></textarea></td>
                 </tr>
-                <hr>
                 <tr valign="top">
                     <th scope="row">Titre section contact </th>
                     <td><input type="text" name="tw_title_contact" value="<?php echo esc_attr( get_option('tw_title_contact') ); ?>"></td>
