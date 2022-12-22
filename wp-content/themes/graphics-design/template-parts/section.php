@@ -207,7 +207,7 @@
                         <?php
                         $args = array(
                             'post_type' => 'gdservices',
-                            'posts_per_page' => -1
+                            'posts_per_page' => 4
                         );
 
                         // Query the posts:
