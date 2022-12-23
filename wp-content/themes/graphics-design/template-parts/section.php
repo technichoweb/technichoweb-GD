@@ -221,7 +221,7 @@
                                 <div class="content-card">
                                     <div class="front">
                                         <h3><?= the_title() ?></h3>
-                                        <p><?php echo $pictoIcon ?></p>
+                                        <p><img width="100" src="<?php echo $pictoIcon['url'] ?>" alt=""></p>
                                     </div>
                                     <div class="back from-<?php if ($post->ID % 2 == 0): ?>right<?php else: ?>left<?php endif; ?>">
                                         <p class="des">
