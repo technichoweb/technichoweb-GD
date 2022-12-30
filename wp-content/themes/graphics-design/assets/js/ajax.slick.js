@@ -12,8 +12,9 @@ jQuery(document).ready(function () {
             }, success: function (response) {
                 let isSlickable = !response[0].IsSlickable || response[0].IsSlickable === undefined
                 let bgImage = response[0].BgImage || !response[0].BgImage === undefined
+                let brochure = response[0].brochure || !response[0].brochure === undefined
                 let hasClassFluid = isSlickable ? 'img-fluid' : '';
-                let isBackgroundImage = bgImage ?  'style="width: 216%;\n' +
+                let isBackgroundImage = bgImage || brochure ?  'style="width: 216%;\n' +
                     '    height: auto;\n' +
                     '    left: 18%;\n' +
                     '    margin-left: -50%;':'';

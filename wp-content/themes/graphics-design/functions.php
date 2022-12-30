@@ -182,6 +182,7 @@ function get_data_images()
             'slug' => $term->slug,
             'IsSlickable' => $isSlickable == 'background' || $isSlickable == 'brochure',
             'BgImage' => $isSlickable == 'background',
+            'brochure' => $isSlickable == 'brochure',
             'term_id' => $term->term_id,
             'url_image' => get_field('gd_photo', $taxonomyName . '_' . $term->term_id)['url']
         ];
