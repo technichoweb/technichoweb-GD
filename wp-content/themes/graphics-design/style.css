@@ -1134,3 +1134,6 @@ logo loader
     animation: float 1s ease-in-out infinite;
 }
 .waiting-logo img { width: 100%; height: auto; }
+.detour{
+    padding-left: 0 !important;
+}

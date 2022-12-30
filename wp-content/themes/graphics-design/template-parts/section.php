@@ -111,6 +111,38 @@
         </div> <!-- row -->
         <div class="row grid portfolio">
             <?php
+            $args = array(
+                'post_type' => 'gdclipping',
+                'posts_per_page' => -1
+            );
+
+            // Query the posts:
+            $query = new WP_Query($args);
+            // Loop through the obituaries:
+            while ($query->have_posts()) : $query->the_post();
+                $firstImage = get_field('gd_first_image', $post->ID)['url'];
+                $secondImage = get_field('gd_second_image', $post->ID)['url'];
+                $slug = '';
+                $postName = explode('-', $post->post_name);
+                if (isset($postName) && array_key_exists(0, $postName)) {
+                    $slug = $postName[0];
+                }
+                ?>
+                <div class="detour col-md-4 col-sm-6 <?= $slug ?>">
+                    <div class="single-portfolio mt-30">
+                        <div class="img-comp-container">
+                            <div class="img-comp-img "
+                                 style="background-image: url('<?php echo get_template_directory_uri() . '/assets/images/clip.png' ?>')">
+                                <img src="<?php echo $firstImage ?>" width="380" height="240">
+                            </div>
+                            <div class="img-comp-img img-comp-overlay">
+                                <img src="<?php echo $secondImage ?>" width="380" height="240">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+            <?php
             $termWithoutParent = '';
             $terms = get_terms([
                 'taxonomy' => 'gallery',
@@ -143,38 +175,7 @@
             <?php } ?>
 
 
-            <?php
-            $args = array(
-                'post_type' => 'gdclipping',
-                'posts_per_page' => -1
-            );
 
-            // Query the posts:
-            $query = new WP_Query($args);
-            // Loop through the obituaries:
-            while ($query->have_posts()) : $query->the_post();
-                $firstImage = get_field('gd_first_image', $post->ID)['url'];
-                $secondImage = get_field('gd_second_image', $post->ID)['url'];
-                $slug = '';
-                $postName = explode('-', $post->post_name);
-                if (isset($postName) && array_key_exists(0, $postName)) {
-                    $slug = $postName[0];
-                }
-                ?>
-                <div class="col-lg-4 col-sm-6 <?= $slug ?>">
-                    <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                        <div class="img-comp-container">
-                            <div class="img-comp-img "
-                                 style="background-image: url('<?php echo get_template_directory_uri() . '/assets/images/clip.png' ?>')">
-                                <img src="<?php echo $firstImage ?>" width="350" height="240">
-                            </div>
-                            <div class="img-comp-img img-comp-overlay">
-                                <img src="<?php echo $secondImage ?>" width="350" height="240">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <?php endwhile; ?>
         </div>
     </div> <!-- row -->
     <div class="modal fade" style="background-color: rgba(0, 0, 0, 0.8);" id="" tabindex="-1" role="dialog"
