@@ -224,7 +224,7 @@
                                         <h3><?= the_title() ?></h3>
                                         <p><img width="100" src="<?php echo $pictoIcon['url'] ?>" alt=""></p>
                                     </div>
-                                    <div class="back from-<?php if ($post->ID % 2 == 0): ?>right<?php else: ?>left<?php endif; ?>">
+                                    <div style="background: url('<?php echo get_template_directory_uri().'/assets/images/servicebg.JPG' ?>')" class="back from-left">
                                         <p class="des">
                                             <?php the_content() ?>
                                         </p>
