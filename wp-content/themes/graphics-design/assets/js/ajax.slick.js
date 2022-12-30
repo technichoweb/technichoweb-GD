@@ -14,10 +14,19 @@ jQuery(document).ready(function () {
                 let bgImage = response[0].BgImage || !response[0].BgImage === undefined
                 let brochure = response[0].brochure || !response[0].brochure === undefined
                 let hasClassFluid = isSlickable ? 'img-fluid' : '';
-                let isBackgroundImage = bgImage || brochure ?  'style="width: 216%;\n' +
-                    '    height: auto;\n' +
-                    '    left: 18%;\n' +
-                    '    margin-left: -50%;':'';
+                let isBackgroundImage = '';
+                if(bgImage){
+                    isBackgroundImage = 'style="width: 216%;\n' +
+                        '    height: auto;\n' +
+                        '    left: 18%;\n' +
+                        '    margin-left: -50%;';
+
+                }else if(brochure){
+                    isBackgroundImage = 'style="width: 100%;\n' +
+                        '    height: auto;\n' +
+                        '    left: 18%;';
+                }
+
                 miseenpageElem.slick('destroy');
                 let output = ''
                 $.each(response, function(pos, el) {
