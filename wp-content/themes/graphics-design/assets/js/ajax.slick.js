@@ -39,6 +39,7 @@ jQuery(document).ready(function () {
                     miseenpageElem.slick({
                         speed: 1000,
                         fade: true,
+                        dots: true,
                         prevArrow: '<button class="slide-arrow prev-arrow"></button>',
                         nextArrow: '<button class="slide-arrow next-arrow"></button>'
                     });

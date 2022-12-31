@@ -1137,3 +1137,38 @@ logo loader
 .detour{
     padding-left: 0 !important;
 }
+
+
+.slider {
+    width: 40rem;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+}
+.slick-dots li {
+    margin: 0 1.25rem !important;
+}
+.slick-dots button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #ffffff;
+    text-indent: -9999px;
+}
+.slick-dots li.slick-active button {
+    background-color: #e72f49 ;
+}
