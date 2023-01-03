@@ -317,5 +317,34 @@
         </div>
     </div>
 </section>
-<!-- Counter Section End -->
-<!--====== CONTACT TWO PART START ======-->
+<section id="blog" class="site-content">
+    <div id="content" role="main">
+        <div class="row">
+            <?php while ( have_posts() ) : the_post(); ?>
+            <div class="blog-card">
+                <div class="meta">
+                    <div class="photo" ><?php the_post_thumbnail(); ?></div>
+
+                    <ul class="details">
+                        <li class="author"><a href="#"><?php the_author() ?></a></li>
+                        <li class="date"><?php the_date() ?></li>
+                        <li class="tags">
+                            <ul>
+                                <li><?php the_tags(); ?></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <h1><?php the_title(); ?></h1>
+                    <p><?php the_excerpt(); ?></p>
+                    <p class="read-more">
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <?php endwhile; ?>
+        </div>
+    </div>
+</section>

@@ -324,3 +324,7 @@ function remove_content_editor() {
     remove_post_type_support( 'gdcounter', 'editor' );
     remove_post_type_support( 'gdclipping', 'editor' );
 }
+
+if (function_exists( 'add_theme_support' )) {
+    add_theme_support( 'post-thumbnails' );
+}
