@@ -37,12 +37,8 @@
                     <?php the_modified_date() ?>
                 </div>
                 <div class="block published">
-                    <div class="mini-title">Vues</div>
-                    <?= get_post_view(); ?>
-                </div>
-                <div class="block published">
                     <div class="mini-title">Reading</div>
-                    12 min
+                    5 minutes
                 </div>
             </div>
             <div class="words">
@@ -135,7 +131,7 @@
         border: 1px solid #e9e9f6;
         padding: 20px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 40px auto;
         background-color: #fdfdfd;
         overflow: hidden;
