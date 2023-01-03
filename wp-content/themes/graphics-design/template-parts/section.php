@@ -327,7 +327,7 @@
 
                     <ul class="details">
                         <li class="author"><a href="#"><?php the_author() ?></a></li>
-                        <li class="date"><?php the_date() ?></li>
+                        <li class="date"><?php the_modified_date() ?></li>
                         <li class="tags">
                             <ul>
                                 <li><?php the_tags(); ?></li>
@@ -339,7 +339,7 @@
                     <h1><?php the_title(); ?></h1>
                     <p><?php the_excerpt(); ?></p>
                     <p class="read-more">
-                        <a href="#">Read More</a>
+                        <a target="_blank" href="<?php echo get_permalink($post) ?>">Lire la suite ...</a>
                     </p>
                 </div>
             </div>
