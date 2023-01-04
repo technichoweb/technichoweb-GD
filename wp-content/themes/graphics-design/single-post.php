@@ -77,22 +77,25 @@
         border-radius: 10px;
         margin-top: 40px;
         overflow: hidden;
-        background: center url(<?php echo get_the_post_thumbnail_url(); ?>);
+        background: center no-repeat url(<?php echo get_the_post_thumbnail_url(); ?>);
         position: relative;
         box-shadow: 0px 4px 100px -3px #00059733;
+        /*text-shadow: white 0px 0px 2px;*/
+        font-size: 16px;
+        background-size: 970px;
     }
 
     .container-single .poster .poster-title {
         position: absolute;
         bottom: 40px;
         left: 40px;
-        width: 40%;
+        /*width: 40%;*/
     }
 
-    .container-single .poster .poster-title h1 {
-        font-size: 40px;
+    .container-single .poster .poster-title h4 {
+        font-size: 20px;
         color: white;
-        font-weight: 300;
+        font-weight: 600;
         margin: 20px 0;
     }
 

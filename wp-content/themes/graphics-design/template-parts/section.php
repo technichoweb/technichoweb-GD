@@ -323,7 +323,7 @@
             <?php while ( have_posts() ) : the_post(); ?>
             <div class="blog-card">
                 <div class="meta">
-                    <div class="photo" ><?php the_post_thumbnail(); ?></div>
+                    <div class="photo" ><?php the_post_thumbnail("medium_large"); ?></div>
 
                     <ul class="details">
                         <li class="author"><a href="#"><?php the_author() ?></a></li>
