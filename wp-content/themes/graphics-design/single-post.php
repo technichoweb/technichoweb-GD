@@ -8,7 +8,7 @@
         <div class="container-single">
             <div class="poster">
                 <div class="poster-title">
-                    <h4> <?php the_title() ?> </h4>
+                    <h3> <?php the_title() ?> </h3>
                 </div>
                 <div class="poster-buttons">
 <!--                    <div>-->
@@ -91,6 +91,13 @@
         bottom: 40px;
         left: 40px;
         /*width: 40%;*/
+    }
+
+    .poster-title h3 {
+        color: white;
+        display: inline-block;
+        background-color: rgba(0,0,0,.5);
+        padding: 10px;
     }
 
     .container-single .poster .poster-title h4 {
