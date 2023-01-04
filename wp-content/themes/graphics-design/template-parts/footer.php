@@ -32,11 +32,11 @@
                             <?php endif; ?>
                             <li><a target="_blank" href="#"><i class="lni lni-display"></i> Studio de création visuel</a></li>
                             <?php if (get_option('tw_phone') !== "" && $phoneNumber = get_option('tw_phone')): ?>
-                                <li><a target="_blank" href="<?= $phoneNumber ?>"><i class="lni lni-phone"></i>
+                                <li><a target="_blank" href="tel:<?= $phoneNumber ?>"><i class="lni lni-phone"></i>
                                         <?php echo get_option('tw_phone') ?></a></li>
                             <?php endif; ?>
                             <?php if (get_option('tw_email') !== "" && $emailAddress = get_option('tw_email')): ?>
-                                <li><a target="_blank" href="<?php echo get_option('tw_email') ?>"><i
+                                <li><a target="_blank" href="mailto:<?php echo get_option('tw_email') ?>"><i
                                                 class="lni lni-envelope"></i> <?php echo get_option('tw_email') ?></a>
                                 </li>
                             <?php endif; ?>
