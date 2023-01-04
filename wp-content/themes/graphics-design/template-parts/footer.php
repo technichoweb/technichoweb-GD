@@ -26,7 +26,7 @@
                         <h6 class="footer-title">Contact</h6>
                         <ul>
                             <?php if (get_option('tw_facebook_url') !== "" && $websiteUrl = get_option('tw_facebook_url')): ?>
-                                <li><a target="_blank" href="<?php echo get_option('tw_facebook_url') ?>"><i
+                                <li><a target="_blank" href="<?php echo $websiteUrl?>"><i
                                                 class="lni lni-facebook-filled"></i> Alexandre M.</a>
                                 </li>
                             <?php endif; ?>
@@ -36,18 +36,18 @@
                                         <?php echo get_option('tw_phone') ?></a></li>
                             <?php endif; ?>
                             <?php if (get_option('tw_email') !== "" && $emailAddress = get_option('tw_email')): ?>
-                                <li><a target="_blank" href="mailto:<?php echo get_option('tw_email') ?>"><i
-                                                class="lni lni-envelope"></i> <?php echo get_option('tw_email') ?></a>
+                                <li><a target="_blank" href="mailto:<?php echo $emailAddress ?>"><i
+                                                class="lni lni-envelope"></i> <?php echo $emailAddress ?></a>
                                 </li>
                             <?php endif; ?>
                             <?php if (get_option('tw_website') !== "" && $websiteUrl = get_option('tw_website')): ?>
-                                <li><a target="_blank" href="<?php echo get_option('tw_website') ?>"><i
-                                                class="lni lni-world"></i> <?php echo get_option('tw_website') ?></a>
+                                <li><a target="_blank" href="<?php echo $websiteUrl ?>"><i
+                                                class="lni lni-world"></i> <?php echo $websiteUrl ?></a>
                                 </li>
                             <?php endif; ?>
                             <?php if (get_option('tw_skype_url') !== "" && $websiteUrl = get_option('tw_skype_url')): ?>
-                                <li><a target="_blank" href="<?php echo get_option('tw_skype_url') ?>"><i
-                                                class="lni lni-skype"></i> <?php echo get_option('tw_skype_url') ?></a>
+                                <li><a target="_blank" href="<?php echo $websiteUrl ?>"><i
+                                                class="lni lni-skype"></i> <?php echo $websiteUrl ?></a>
                                 </li>
                             <?php endif; ?>
                         </ul>
