@@ -37,13 +37,14 @@
                     <?php the_modified_date() ?>
                 </div>
                 <div class="block published">
-                    <div class="mini-title">Reading</div>
-                    5 minutes
+                    <div class="mini-title">Temps de lecture</div>
+                    <?php echo get_post_meta( $post->ID, 'reading_time', true ); ?> minutes
                 </div>
             </div>
             <div class="words">
-                <p><font class="letter">S</font>
-                    <?php the_content(); ?>
+                <?php $firstCharContent = substr(wp_strip_all_tags(get_the_content()), 0, 1); ?>
+                <p><font class="letter"><?= $firstCharContent ?></font>
+                    <?= $post->post_content; ?>
             </div>
         </div>
     </div>
