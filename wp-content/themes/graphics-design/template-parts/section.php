@@ -318,6 +318,14 @@
     </div>
 </section>
 <section id="blog" class="site-content">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <div class="section-title text-center pb-20 pt-80">
+                <h3 class="title contact-header-title"><?php echo get_option('tw_title_blog') ?></h3>
+                <p class="text"><?php echo get_option('tw_blog') ?></p>
+            </div> <!-- section title -->
+        </div>
+    </div> <!-- row -->
     <div id="content" role="main">
         <div class="row">
             <?php while ( have_posts() ) : the_post(); ?>

@@ -207,7 +207,7 @@ function my_cool_plugin_create_menu() {
 
 function register_tw_plugin_settings() {
     //register our settings
-    $inputNames = ['tw_phone','tw_email','tw_portfolio','tw_title_portfolio','tw_title_contact','tw_contact','tw_seconde_contact','tw_service','tw_title_service','tw_about','tw_header_title','tw_skype_url','tw_typewriter_text','tw_address','tw_website','tw_facebook_url','tw_linkedin_url'];
+    $inputNames = ['tw_phone','tw_email','tw_title_blog','tw_blog','tw_portfolio','tw_title_portfolio','tw_title_contact','tw_contact','tw_seconde_contact','tw_service','tw_title_service','tw_about','tw_header_title','tw_skype_url','tw_typewriter_text','tw_address','tw_website','tw_facebook_url','tw_linkedin_url'];
     foreach ($inputNames as $inputName){
         register_setting( 'tw_plugin-settings-group', $inputName);
     }
@@ -304,6 +304,14 @@ function tw_plugin_settings_page() {
                 <tr valign="top">
                     <th scope="row">Apropos</th>
                     <td><textarea name="tw_about" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_about') ); ?></textarea></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Titre blog</th>
+                    <td><textarea name="tw_title_blog" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_title_blog') ); ?></textarea></td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row">Text blog</th>
+                    <td><textarea name="tw_blog" id="" cols="100" rows="10"><?php echo esc_attr( get_option('tw_blog') ); ?></textarea></td>
                 </tr>
             </table>
             <?php submit_button(); ?>
