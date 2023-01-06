@@ -61,7 +61,7 @@
                                 <a class="zoom go-to-portfolio" href="#">
 
                                 <img class="img-thumbnail img-gallery-blur"
-                                     src="<?php echo get_template_directory_uri() . '/assets/images/Graphic-12' ?>"
+                                     src="<?php echo get_template_directory_uri() . '/assets/images/Graphic-12.jpg' ?>"
                                      alt=""></a>
                             </div>
                             <div class="col ">
@@ -80,7 +80,7 @@
                             <div class="col ">
                                 <a class="zoom go-to-portfolio" href="#">
                                     <img class="img-thumbnail img-gallery-blur"
-                                         src="<?php echo get_template_directory_uri() . '/assets/images/Graphic-10' ?>"
+                                         src="<?php echo get_template_directory_uri() . '/assets/images/Graphic-10.jpg' ?>"
                                          alt=""></a>
                             </div>
                         </div>
