@@ -50,7 +50,6 @@
             <?php if (is_single()) : ?>
             <?php
                 $fieldsArray = array(
-//                    'author' => '<p class=""><input type="text" required placeholder="Votre nom" class="form-control"></p>',
                     'comment_field' => '<p class="comment-form-comment"><label for="comment"></label><br /><textarea required class="form-control" cols="95" rows="5" id="comment" name="comment" aria-required="true"></textarea></p>'
                 );
                 $fieldsBlock = is_user_logged_in() ?
@@ -58,7 +57,6 @@
                     '';
 
                 $comments_args = array(
-                    // change the title of send button
                     'label_submit'=>'Envoyer',
                     'fields'=> array(
                         'author' => '<p class=""><input name="author" type="text" required placeholder="Saisissez votre nom ..." class="form-control"></p><br>',
@@ -66,12 +64,9 @@
                         'comment_field' => '<p class="comment-form-comment"><label for="comment"></label><br /><textarea required class="form-control" cols="95" rows="5" id="comment" name="comment" aria-required="true"></textarea></p>'
                     ),
                     'logged_in_as' => '',
-                    // change the title of the reply section
                     'title_reply'=>'Laisser un commentaire',
-                    // remove "Text or HTML to be displayed after the set of comment fields"
                     'comment_notes_after' => '',
                     'submit_button' => '<div class="form-input rounded-buttons mt-20"><input  class="main-btn rounded-three" type="submit" value="Envoyer"></div>',
-                    // redefine your own textarea (the comment body)
                     'comment_field' => $fieldsBlock,
                 );
 
