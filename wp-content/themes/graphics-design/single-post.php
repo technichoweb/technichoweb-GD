@@ -61,7 +61,8 @@
                     // change the title of send button
                     'label_submit'=>'Envoyer',
                     'fields'=> array(
-                        'author' => '<p class=""><input name="author" type="text" required placeholder="Saisissez votre nom ..." class="form-control"></p>',
+                        'author' => '<p class=""><input name="author" type="text" required placeholder="Saisissez votre nom ..." class="form-control"></p><br>',
+                        'email' => '<p class=""><input name="email" type="email" required placeholder="Saisissez votre email ..." class="form-control"></p>',
                         'comment_field' => '<p class="comment-form-comment"><label for="comment"></label><br /><textarea required class="form-control" cols="95" rows="5" id="comment" name="comment" aria-required="true"></textarea></p>'
                     ),
                     'logged_in_as' => '',
@@ -93,13 +94,10 @@
                                             <h6 class="comment-name"><?php echo $comment->comment_author; ?></h6>
                                             <span><?php echo
                                                 sprintf(
-                                                /* translators: 1: Comment date, 2: Comment time. */
                                                     __( '%1$s at %2$s' ),
                                                     get_comment_date( '', $comment ),
                                                     get_comment_time()
                                                 ); ?></span>
-                                            <!--                                    <i class="fa fa-reply"></i>-->
-                                            <!--                                    <i class="fa fa-heart"></i>-->
                                         </div>
                                         <div class="comment-content">
                                             <?php echo $comment->comment_content; ?>
