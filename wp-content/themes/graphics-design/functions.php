@@ -389,3 +389,11 @@ function gd_reading_time($post_id, $post, $update)
 }
 
 add_action('save_post', 'gd_reading_time', 10, 3);
+
+add_filter( 'get_comment_date', 'wpsites_change_comment_date_format' );
+function wpsites_change_comment_date_format( $d ) {
+
+    $d = date("d/m/Y");
+    return $d;
+}
+

@@ -46,6 +46,74 @@
                 <p><font class="letter"><?= $firstCharContent ?></font>
                     <?= $post->post_content; ?>
             </div>
+            <hr>
+            <?php if (is_single()) : ?>
+            <?php
+                $fieldsArray = array(
+//                    'author' => '<p class=""><input type="text" required placeholder="Votre nom" class="form-control"></p>',
+                    'comment_field' => '<p class="comment-form-comment"><label for="comment"></label><br /><textarea required class="form-control" cols="95" rows="5" id="comment" name="comment" aria-required="true"></textarea></p>'
+                );
+                $fieldsBlock = is_user_logged_in() ?
+                    '<p class="comment-form-comment"><label for="comment"></label><br /><textarea required class="form-control" cols="95" rows="5" id="comment" name="comment" aria-required="true"></textarea></p>' :
+                    '';
+
+                $comments_args = array(
+                    // change the title of send button
+                    'label_submit'=>'Envoyer',
+                    'fields'=> array(
+                        'author' => '<p class=""><input name="author" type="text" required placeholder="Saisissez votre nom ..." class="form-control"></p>',
+                        'comment_field' => '<p class="comment-form-comment"><label for="comment"></label><br /><textarea required class="form-control" cols="95" rows="5" id="comment" name="comment" aria-required="true"></textarea></p>'
+                    ),
+                    'logged_in_as' => '',
+                    // change the title of the reply section
+                    'title_reply'=>'Laisser un commentaire',
+                    // remove "Text or HTML to be displayed after the set of comment fields"
+                    'comment_notes_after' => '',
+                    'submit_button' => '<div class="form-input rounded-buttons mt-20"><input  class="main-btn rounded-three" type="submit" value="Envoyer"></div>',
+                    // redefine your own textarea (the comment body)
+                    'comment_field' => $fieldsBlock,
+                );
+
+
+            ?>
+                <div class="form-group">
+                    <?php comment_form($comments_args);; ?>
+                </div>
+                <div class="comments-container">
+                <?php foreach (get_approved_comments($post->ID) as $comment): ?>
+                        <ul id="comments-list" class="comments-list">
+                            <li>
+                                <div class="comment-main-level">
+                                    <div class="comment-avatar">
+                                        <?php echo get_avatar( $comment ); ?>
+                                        ?>
+                                    </div>
+                                    <div class="comment-box">
+                                        <div class="comment-head">
+                                            <h6 class="comment-name"><?php echo $comment->comment_author; ?></h6>
+                                            <span><?php echo
+                                                sprintf(
+                                                /* translators: 1: Comment date, 2: Comment time. */
+                                                    __( '%1$s at %2$s' ),
+                                                    get_comment_date( '', $comment ),
+                                                    get_comment_time()
+                                                ); ?></span>
+                                            <!--                                    <i class="fa fa-reply"></i>-->
+                                            <!--                                    <i class="fa fa-heart"></i>-->
+                                        </div>
+                                        <div class="comment-content">
+                                            <?php echo $comment->comment_content; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+
+
         </div>
     </div>
 </div>
