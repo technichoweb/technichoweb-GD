@@ -27,10 +27,10 @@
                         <ul>
                             <?php if (get_option('tw_facebook_url') !== "" && $websiteUrl = get_option('tw_facebook_url')): ?>
                                 <li><a target="_blank" href="<?php echo $websiteUrl?>"><i
-                                                class="lni lni-facebook-filled"></i> Alexandre M.</a>
+                                                class="lni lni-facebook-filled"></i> <?php echo  get_option("tw_fb_name")  ?></a>
                                 </li>
                             <?php endif; ?>
-                            <li><a target="_blank" href="#"><i class="lni lni-display"></i> Studio de création visuel</a></li>
+                            <li><a target="_blank" href="#"><i class="lni lni-display"></i><?php echo  get_option("tw_name")  ?></a></li>
                             <?php if (get_option('tw_phone') !== "" && $phoneNumber = get_option('tw_phone')): ?>
                                 <li><a target="_blank" href="tel:<?= $phoneNumber ?>"><i class="lni lni-phone"></i>
                                         <?php echo get_option('tw_phone') ?></a></li>
